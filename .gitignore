@@ -1,0 +1,51 @@
+# Git Ignore for AI Underwriting Copilot
+
+# Secrets & Environment
+.env
+*.env.local
+
+# Build artifacts - Java
+core-service/target/
+core-service/.mvn/wrapper/maven-wrapper.jar
+*.class
+*.jar
+*.war
+
+# Build artifacts - Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ai-service/.venv/
+evals/.venv/
+data-gen/.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Data & Synthetic artifacts
+data/synthetic/*
+!data/synthetic/.gitkeep
+
+# IDE & Editor files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# UI
+ui/node_modules/
+ui/dist/
+ui/.next/
+ui/build/
+
+# Docker volumes & logs
+*.log
