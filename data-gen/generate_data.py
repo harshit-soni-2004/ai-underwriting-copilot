@@ -121,40 +121,25 @@ def generate_applicant_dataset(
     )
 
     # 8. Ground Truth JSON
+    nt_is_near = False
     nt_clause = profile.get("near_threshold_clause", "")
-    nt_val = profile.get("near_threshold_metric_value", "")
-    nt_thresh = profile.get("near_threshold_threshold", "")
-    nt_margin = profile.get("near_threshold_margin", "")
-    nt_side = profile.get("near_threshold_side", "")
+    nt_val = ""
+    nt_thresh = ""
+    nt_margin = ""
+    nt_side = ""
 
     if profile.get("near_threshold"):
-        if nt_clause == "FIN-01":
-            nt_val = expected_metrics["dscr_proxy"]
-            nt_margin = f"{Decimal(nt_val) - Decimal('1.2500'):+.4f}"
-        elif nt_clause == "FIN-02":
-            nt_val = expected_metrics["average_monthly_balance"]
-            nt_margin = f"{Decimal(nt_val) - Decimal('25000.00'):+.2f}"
-        elif nt_clause == "FIN-04":
-            nt_val = expected_metrics["foir"]
-            nt_margin = f"{Decimal(nt_val) - Decimal('0.5000'):+.4f}"
-        elif nt_clause == "FIN-05":
-            nt_val = expected_metrics["counterparty_top1_share"]
-            nt_margin = f"{Decimal(nt_val) - Decimal('0.4000'):+.4f}"
-        elif nt_clause == "FIN-06":
-            nt_val = expected_metrics["cash_flow_volatility_cv"]
-            nt_margin = f"{Decimal(nt_val) - Decimal('0.6000'):+.4f}"
-        elif nt_clause == "FIN-07":
-            nt_val = expected_metrics["round_trip_ratio"]
-            nt_margin = f"{Decimal(nt_val) - Decimal('0.0200'):+.4f}"
-        elif nt_clause == "ELIG-01":
-            nt_val = str(profile["vintage_months"])
-            nt_margin = f"{int(nt_val) - int(nt_thresh):+d}"
-        elif nt_clause == "ELIG-02":
-            nt_val = str(Decimal(expected_metrics["avg_monthly_operating_inflow"]) * 12)
-            nt_margin = f"{Decimal(nt_val) - Decimal('2500000.00'):+.2f}"
-        elif nt_clause == "DOC-02":
-            nt_val = expected_metrics["gst_turnover_ratio"]
-            nt_margin = f"{Decimal(nt_val) - Decimal('1.2000'):+.4f}"
+        res = ReferenceMetricsOracle.analyze_near_threshold(
+            nt_clause,
+            expected_metrics,
+            profile,
+            target_boundary=profile.get("target_boundary")
+        )
+        nt_is_near = res["is_near_threshold"]
+        nt_val = res["metric_value"]
+        nt_thresh = res["threshold"]
+        nt_margin = res["margin"]
+        nt_side = res["side"]
 
     ground_truth = {
         "applicant_id": applicant_id,
@@ -173,12 +158,13 @@ def generate_applicant_dataset(
         "proposed_monthly_emi": profile["proposed_monthly_emi"],
         "statement_start_date": profile["statement_start_date"],
         "statement_end_date": profile["statement_end_date"],
-        "near_threshold": profile.get("near_threshold", False),
-        "near_threshold_clause": nt_clause,
-        "near_threshold_metric_value": nt_val,
-        "near_threshold_threshold": nt_thresh,
-        "near_threshold_margin": nt_margin,
-        "near_threshold_side": nt_side,
+        "near_threshold": nt_is_near,
+        "clause_isolation": profile.get("clause_isolation", False),
+        "near_threshold_clause": nt_clause if nt_is_near else "",
+        "near_threshold_metric_value": nt_val if nt_is_near else "",
+        "near_threshold_threshold": nt_thresh if nt_is_near else "",
+        "near_threshold_margin": nt_margin if nt_is_near else "",
+        "near_threshold_side": nt_side if nt_is_near else "",
         "expected_decision": expected_decision,
         "policy_clauses_triggered": policy_clauses_triggered,
         "expected_metrics": expected_metrics
@@ -190,84 +176,7 @@ def generate_applicant_dataset(
     return ground_truth
 
 def get_applicant_id(counter: int, archetype: str, idx: int) -> str:
-    if archetype == "healthy":
-        if idx in [12, 13, 14]:
-            return f"APP-{counter:03d}-HEALTHY-ALONE-FIN01"
-        elif idx in [15, 16, 17]:
-            return f"APP-{counter:03d}-HEALTHY-ALONE-FIN02"
-        elif idx in [18, 19, 20]:
-            return f"APP-{counter:03d}-HEALTHY-ALONE-FIN04"
-        elif idx in [21, 22, 23]:
-            return f"APP-{counter:03d}-HEALTHY-ALONE-DOC02"
-        elif idx == 24:
-            return f"APP-{counter:03d}-HEALTHY-NEAR-DSCR-PASS"
-        elif idx == 25:
-            return f"APP-{counter:03d}-HEALTHY-NEAR-DSCR-FAIL"
-        elif idx == 26:
-            return f"APP-{counter:03d}-HEALTHY-NEAR-AMB-PASS"
-        elif idx == 27:
-            return f"APP-{counter:03d}-HEALTHY-NEAR-AMB-FAIL"
-        elif idx == 28:
-            return f"APP-{counter:03d}-HEALTHY-NEAR-FOIR-PASS"
-        elif idx == 29:
-            return f"APP-{counter:03d}-HEALTHY-NEAR-FOIR-FAIL"
-        return f"APP-{counter:03d}-HEALTHY"
-
-    elif archetype == "seasonal":
-        if idx in [10, 11, 12, 13]:
-            return f"APP-{counter:03d}-SEASONAL-NEAR-PASS-CV"
-        elif idx in [14, 15, 16, 17, 18, 19]:
-            return f"APP-{counter:03d}-SEASONAL-ALONE-FIN06"
-        return f"APP-{counter:03d}-SEASONAL"
-
-    elif archetype == "high_concentration":
-        if idx in [10, 11, 12, 13]:
-            return f"APP-{counter:03d}-HIGH_CONCENTRATION-NEAR-PASS-TOP1"
-        elif idx in [14, 15, 16, 17, 18, 19]:
-            return f"APP-{counter:03d}-HIGH_CONCENTRATION-ALONE-FIN05"
-        return f"APP-{counter:03d}-HIGH_CONCENTRATION"
-
-    elif archetype == "stressed":
-        if idx in [0, 1, 2, 3]:
-            return f"APP-{counter:03d}-STRESSED-ALONE-FIN03"
-        elif idx in [4, 5, 6, 7, 8]:
-            return f"APP-{counter:03d}-STRESSED-MILD"
-        elif idx in [9, 10, 11, 12, 13, 14]:
-            return f"APP-{counter:03d}-STRESSED-MODERATE"
-        else:
-            return f"APP-{counter:03d}-STRESSED-HEAVY"
-
-    elif archetype == "thin_file":
-        if idx in [0, 1, 2, 3]:
-            return f"APP-{counter:03d}-THIN_FILE-ALONE-ELIG01"
-        elif idx in [4, 5, 6]:
-            return f"APP-{counter:03d}-THIN_FILE-NEAR-DECLINE-VINTAGE"
-        elif idx in [7, 8, 9, 10]:
-            return f"APP-{counter:03d}-THIN_FILE-NEAR-PASS-VINTAGE"
-        else:
-            return f"APP-{counter:03d}-THIN_FILE-NEAR-MATURE-VINTAGE"
-
-    elif archetype == "edge_cases":
-        edge_subtypes = [
-            "ZERO-INFLOW",
-            "LARGE-CREDIT",
-            "ROUND-TRIP",
-            "DOC02-GST-DISCREPANT",
-            "ALONE-ELIG02",
-            "ALONE-ELIG02",
-            "ALONE-ELIG02",
-            "ALONE-FIN07",
-            "ALONE-FIN07",
-            "ALONE-FIN07",
-            "NEAR-ROUNDTRIP-PASS",
-            "NEAR-DOC02-PASS",
-            "NEAR-TURNOVER-PASS",
-            "NEAR-DOC02-FAIL",
-            "NEAR-TURNOVER-FAIL"
-        ]
-        sub = edge_subtypes[idx] if idx < len(edge_subtypes) else f"EDGE-{idx+1}"
-        return f"APP-{counter:03d}-EDGE-{sub}"
-    return f"APP-{counter:03d}-{archetype.upper()}"
+    return ArchetypeGenerator.get_applicant_id(counter, archetype, idx)
 
 def main():
     parser = argparse.ArgumentParser(description="Generate synthetic MSME applicant dataset")

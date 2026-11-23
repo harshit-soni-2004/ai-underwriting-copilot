@@ -5,8 +5,10 @@ import tempfile
 import shutil
 from pathlib import Path
 from decimal import Decimal
+from collections import defaultdict, Counter
 from archetypes import compute_gstin_checksum
 from generate_data import generate_applicant_dataset, ARCHETYPE_COUNTS, get_applicant_id
+from reference_metrics import ReferenceMetricsOracle
 
 PAN_REGEX = re.compile(r"^[A-Z]{3}[CFP][A-Z][0-9]{4}[A-Z]$")
 GSTIN_REGEX = re.compile(r"^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z][1-9A-Z]Z[0-9A-Z]$")
@@ -187,3 +189,125 @@ def test_dscr_foir_mathematical_identity():
                 checked += 1
 
     assert checked >= 115, f"Expected >= 115 checked applicants, got {checked}"
+
+def test_unique_metric_tuples_zero_clones():
+    """All 120 applicants must possess distinct metric tuples (zero duplicate clones)."""
+    base_dir = Path(__file__).resolve().parent.parent.parent
+    synthetic_dir = base_dir / "data" / "synthetic" / "applicants"
+
+    tuples = set()
+    total = 0
+    for app_path in synthetic_dir.glob("APP-*"):
+        with open(app_path / "ground_truth.json", "r", encoding="utf-8") as f:
+            gt = json.load(f)
+        m = gt["expected_metrics"]
+        m_tuple = (
+            m["average_monthly_balance"],
+            m["avg_monthly_operating_inflow"],
+            m["avg_monthly_operating_outflow"],
+            m["cash_flow_volatility_cv"],
+            m["dscr_proxy"],
+            m["foir"],
+            m["counterparty_top1_share"],
+            m["counterparty_hhi"],
+            m["round_trip_ratio"]
+        )
+        tuples.add(m_tuple)
+        total += 1
+
+    assert total == 120, f"Expected 120 applicants, found {total}"
+    assert len(tuples) == 120, f"Expected 120 unique metric tuples, but found only {len(tuples)} ({120 - len(tuples)} duplicates)"
+
+def test_clause_alone_coverage_minimums():
+    """All 10 policy clauses must be triggered alone by at least 3 distinct applicants."""
+    base_dir = Path(__file__).resolve().parent.parent.parent
+    synthetic_dir = base_dir / "data" / "synthetic" / "applicants"
+
+    alone_counts = Counter()
+    for app_path in synthetic_dir.glob("APP-*"):
+        with open(app_path / "ground_truth.json", "r", encoding="utf-8") as f:
+            gt = json.load(f)
+        trig = gt.get("policy_clauses_triggered", [])
+        if len(trig) == 1:
+            alone_counts[trig[0]] += 1
+
+    required_clauses = [
+        "ELIG-01", "ELIG-02",
+        "FIN-01", "FIN-02", "FIN-03", "FIN-04", "FIN-05", "FIN-06", "FIN-07",
+        "DOC-02"
+    ]
+    for c in required_clauses:
+        count = alone_counts[c]
+        assert count >= 3, f"Clause {c} triggered alone only {count} times (minimum 3 required)"
+
+def test_near_threshold_rules_and_signed_margins():
+    """Near-threshold applicants must be >= 10, >= 5 clauses on both sides, with valid margins and sides."""
+    base_dir = Path(__file__).resolve().parent.parent.parent
+    synthetic_dir = base_dir / "data" / "synthetic" / "applicants"
+
+    nt_applicants = []
+    both_sides_map = defaultdict(lambda: {"passing": 0, "failing": 0})
+
+    for app_path in synthetic_dir.glob("APP-*"):
+        with open(app_path / "ground_truth.json", "r", encoding="utf-8") as f:
+            gt = json.load(f)
+
+        if gt.get("near_threshold"):
+            nt_applicants.append(gt)
+            c = gt["near_threshold_clause"]
+            side = gt["near_threshold_side"]
+            margin = Decimal(gt["near_threshold_margin"])
+
+            # Verify margin sign convention: passing >= 0, failing < 0
+            if side == "just-passing":
+                assert margin >= Decimal("0"), f"Passing applicant {gt['applicant_id']} has negative margin {margin}"
+                both_sides_map[c]["passing"] += 1
+            elif side == "just-failing":
+                assert margin < Decimal("0"), f"Failing applicant {gt['applicant_id']} has non-negative margin {margin}"
+                both_sides_map[c]["failing"] += 1
+            else:
+                pytest.fail(f"Invalid side {side} in applicant {gt['applicant_id']}")
+
+            # Recompute from oracle to ensure ground truth matches oracle math
+            oracle_res = ReferenceMetricsOracle.analyze_near_threshold(
+                c, gt["expected_metrics"], gt, target_boundary="decline" if "DECLINE-VINTAGE" in gt["applicant_id"] else None
+            )
+            assert oracle_res["is_near_threshold"] is True, f"Applicant {gt['applicant_id']} outside 10% band in oracle"
+            assert oracle_res["side"] == side, f"Side mismatch for {gt['applicant_id']}: {side} vs {oracle_res['side']}"
+            assert oracle_res["margin"] == gt["near_threshold_margin"], f"Margin mismatch for {gt['applicant_id']}: {gt['near_threshold_margin']} vs {oracle_res['margin']}"
+
+    assert len(nt_applicants) >= 10, f"Expected >= 10 near-threshold applicants, got {len(nt_applicants)}"
+    both_sides_count = sum(1 for c, s in both_sides_map.items() if s["passing"] > 0 and s["failing"] > 0)
+    assert both_sides_count >= 5, f"Expected >= 5 clauses covered on both sides, got {both_sides_count}"
+
+def test_stressed_archetype_distinct_combinations():
+    """Stressed applicants must trigger >= 3 distinct combinations of policy clauses."""
+    base_dir = Path(__file__).resolve().parent.parent.parent
+    synthetic_dir = base_dir / "data" / "synthetic" / "applicants"
+
+    stressed_sets = set()
+    for app_path in synthetic_dir.glob("APP-*"):
+        with open(app_path / "ground_truth.json", "r", encoding="utf-8") as f:
+            gt = json.load(f)
+        if gt["archetype"] == "stressed":
+            trig = tuple(sorted(gt.get("policy_clauses_triggered", [])))
+            stressed_sets.add(trig)
+
+    assert len(stressed_sets) >= 3, f"Expected >= 3 distinct stressed clause combinations, got {len(stressed_sets)}: {stressed_sets}"
+
+def test_adversarial_base_applicant_links():
+    """Every adversarial document ground truth base_applicant_id must exist in synthetic applicants."""
+    base_dir = Path(__file__).resolve().parent.parent.parent
+    adv_dir = base_dir / "data" / "synthetic" / "adversarial"
+    app_dir = base_dir / "data" / "synthetic" / "applicants"
+
+    adv_gts = list(adv_dir.glob("*_ground_truth.json"))
+    assert len(adv_gts) == 20, f"Expected 20 adversarial ground truth files, found {len(adv_gts)}"
+
+    for adv_gt_path in adv_gts:
+        with open(adv_gt_path, "r", encoding="utf-8") as f:
+            adv_gt = json.load(f)
+        base_id = adv_gt["base_applicant_id"]
+        assert (app_dir / base_id).exists(), f"Adversarial document {adv_gt_path.name} links to non-existent base applicant {base_id}"
+        assert (app_dir / base_id / "ground_truth.json").exists(), f"Base applicant {base_id} missing ground_truth.json"
+

@@ -43,7 +43,7 @@ endobj
 endobj
 8 0 obj
 <<
-/Length 1976
+/Length 1969
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -78,16 +78,16 @@ BT /F1 8 Tf 9.6 TL ET
 BT 1 0 0 1 45 590 Tm (Industrial Supplies #9) Tj T* ET
 BT 1 0 0 1 240 590 Tm (8481) Tj T* ET
 BT 1 0 0 1 300 590 Tm (5) Tj T* ET
-BT 1 0 0 1 384.416 590 Tm (13,771.19) Tj T* ET
-BT 1 0 0 1 514.416 590 Tm (68,855.93) Tj T* ET
+BT 1 0 0 1 388.864 590 Tm (1,065.89) Tj T* ET
+BT 1 0 0 1 518.864 590 Tm (5,329.45) Tj T* ET
 n 40 574 m 560 574 l S
 BT /F2 8 Tf 9.6 TL ET
 BT 1 0 0 1 340 556 Tm (Taxable Amount:) Tj T* ET
-BT 1 0 0 1 498.416 556 Tm (INR 68,855.93) Tj T* ET
+BT 1 0 0 1 502.864 556 Tm (INR 5,329.45) Tj T* ET
 BT 1 0 0 1 340 542 Tm (GST @ 18%:) Tj T* ET
-BT 1 0 0 1 498.416 542 Tm (INR 12,394.07) Tj T* ET
+BT 1 0 0 1 509.536 542 Tm (INR 959.30) Tj T* ET
 BT 1 0 0 1 340 528 Tm (Total Invoice Amount:) Tj T* ET
-BT 1 0 0 1 498.416 528 Tm (INR 81,250.00) Tj T* ET
+BT 1 0 0 1 502.864 528 Tm (INR 6,288.75) Tj T* ET
 BT /F1 7 Tf 8.4 TL ET
 BT 1 0 0 1 40 100 Tm (Terms & Conditions: Payment due within 30 days of invoice presentation.) Tj T* ET
 BT 1 0 0 1 40 88 Tm (Authorized Signatory: Computer generated invoice, physical signature not required.) Tj T* ET
@@ -116,5 +116,5 @@ trailer
 /Size 9
 >>
 startxref
-2929
+2922
 %%EOF

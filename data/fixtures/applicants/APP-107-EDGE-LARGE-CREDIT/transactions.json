@@ -1,11 +1,11 @@
 {
   "applicant_id": "APP-107-EDGE-LARGE-CREDIT",
-  "opening_balance": "400000.00",
+  "opening_balance": "350000",
   "od_limit": "0.00",
   "transactions": [
     {
       "date": "2024-01-03",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Larsen Heavy Fab",
@@ -14,7 +14,7 @@
     },
     {
       "date": "2024-01-04",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Universal Raw Materials",
@@ -32,7 +32,7 @@
     },
     {
       "date": "2024-01-07",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Adani Logistics Partner",
@@ -41,7 +41,7 @@
     },
     {
       "date": "2024-01-08",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Standard Packing Material Corp",
@@ -50,7 +50,7 @@
     },
     {
       "date": "2024-01-11",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Mahindra Supplier Hub",
@@ -59,7 +59,7 @@
     },
     {
       "date": "2024-01-12",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Universal Raw Materials",
@@ -68,7 +68,7 @@
     },
     {
       "date": "2024-01-15",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bajaj Auto Vendor Corp",
@@ -77,7 +77,7 @@
     },
     {
       "date": "2024-01-16",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Standard Packing Material Corp",
@@ -86,7 +86,7 @@
     },
     {
       "date": "2024-01-18",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Infosys Infra vendor",
@@ -95,7 +95,7 @@
     },
     {
       "date": "2024-01-20",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Universal Raw Materials",
@@ -104,7 +104,7 @@
     },
     {
       "date": "2024-01-22",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Reliance Retail Distribution",
@@ -113,7 +113,7 @@
     },
     {
       "date": "2024-01-24",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Standard Packing Material Corp",
@@ -122,7 +122,7 @@
     },
     {
       "date": "2024-01-25",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Adani Logistics Partner",
@@ -131,7 +131,7 @@
     },
     {
       "date": "2024-01-27",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Tata Power Industrial",
@@ -140,7 +140,7 @@
     },
     {
       "date": "2024-01-28",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Tata Motors Ancillary Ltd",
@@ -149,7 +149,7 @@
     },
     {
       "date": "2024-02-03",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Adani Logistics Partner",
@@ -158,7 +158,7 @@
     },
     {
       "date": "2024-02-04",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Tata Power Industrial",
@@ -176,7 +176,7 @@
     },
     {
       "date": "2024-02-07",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Mahindra Supplier Hub",
@@ -185,7 +185,7 @@
     },
     {
       "date": "2024-02-08",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Shree Cement Distributors",
@@ -194,7 +194,7 @@
     },
     {
       "date": "2024-02-11",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bajaj Auto Vendor Corp",
@@ -203,7 +203,7 @@
     },
     {
       "date": "2024-02-12",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Tata Power Industrial",
@@ -212,7 +212,7 @@
     },
     {
       "date": "2024-02-15",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Tata Motors Ancillary Ltd",
@@ -221,7 +221,7 @@
     },
     {
       "date": "2024-02-16",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Shree Cement Distributors",
@@ -230,7 +230,7 @@
     },
     {
       "date": "2024-02-18",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Reliance Retail Distribution",
@@ -239,7 +239,7 @@
     },
     {
       "date": "2024-02-20",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Tata Power Industrial",
@@ -248,7 +248,7 @@
     },
     {
       "date": "2024-02-22",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bharat Forge Supply",
@@ -257,7 +257,7 @@
     },
     {
       "date": "2024-02-24",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Shree Cement Distributors",
@@ -266,7 +266,7 @@
     },
     {
       "date": "2024-02-25",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Mahindra Supplier Hub",
@@ -275,7 +275,7 @@
     },
     {
       "date": "2024-02-27",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "JSW Steel Depot",
@@ -284,7 +284,7 @@
     },
     {
       "date": "2024-02-28",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Godrej Consumer Vendor",
@@ -293,7 +293,7 @@
     },
     {
       "date": "2024-03-03",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Infosys Infra vendor",
@@ -302,7 +302,7 @@
     },
     {
       "date": "2024-03-04",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Standard Packing Material Corp",
@@ -320,7 +320,7 @@
     },
     {
       "date": "2024-03-07",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Reliance Retail Distribution",
@@ -329,7 +329,7 @@
     },
     {
       "date": "2024-03-08",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Universal Raw Materials",
@@ -338,7 +338,7 @@
     },
     {
       "date": "2024-03-11",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bharat Forge Supply",
@@ -347,7 +347,7 @@
     },
     {
       "date": "2024-03-12",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Standard Packing Material Corp",
@@ -356,7 +356,7 @@
     },
     {
       "date": "2024-03-15",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Larsen Heavy Fab",
@@ -365,7 +365,7 @@
     },
     {
       "date": "2024-03-16",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Universal Raw Materials",
@@ -374,7 +374,7 @@
     },
     {
       "date": "2024-03-18",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bajaj Auto Vendor Corp",
@@ -383,7 +383,7 @@
     },
     {
       "date": "2024-03-20",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Standard Packing Material Corp",
@@ -392,7 +392,7 @@
     },
     {
       "date": "2024-03-22",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Tata Motors Ancillary Ltd",
@@ -401,7 +401,7 @@
     },
     {
       "date": "2024-03-24",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Universal Raw Materials",
@@ -410,7 +410,7 @@
     },
     {
       "date": "2024-03-25",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Reliance Retail Distribution",
@@ -419,7 +419,7 @@
     },
     {
       "date": "2024-03-27",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Shree Cement Distributors",
@@ -428,7 +428,7 @@
     },
     {
       "date": "2024-03-28",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Adani Logistics Partner",
@@ -437,7 +437,7 @@
     },
     {
       "date": "2024-04-03",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Reliance Retail Distribution",
@@ -446,7 +446,7 @@
     },
     {
       "date": "2024-04-04",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Shree Cement Distributors",
@@ -464,7 +464,7 @@
     },
     {
       "date": "2024-04-07",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bharat Forge Supply",
@@ -473,7 +473,7 @@
     },
     {
       "date": "2024-04-08",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Tata Power Industrial",
@@ -482,7 +482,7 @@
     },
     {
       "date": "2024-04-11",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Larsen Heavy Fab",
@@ -491,7 +491,7 @@
     },
     {
       "date": "2024-04-12",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Shree Cement Distributors",
@@ -500,7 +500,7 @@
     },
     {
       "date": "2024-04-15",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Adani Logistics Partner",
@@ -509,7 +509,7 @@
     },
     {
       "date": "2024-04-16",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Tata Power Industrial",
@@ -518,7 +518,7 @@
     },
     {
       "date": "2024-04-18",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Tata Motors Ancillary Ltd",
@@ -527,7 +527,7 @@
     },
     {
       "date": "2024-04-20",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Shree Cement Distributors",
@@ -536,7 +536,7 @@
     },
     {
       "date": "2024-04-22",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Godrej Consumer Vendor",
@@ -545,7 +545,7 @@
     },
     {
       "date": "2024-04-24",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Tata Power Industrial",
@@ -554,7 +554,7 @@
     },
     {
       "date": "2024-04-25",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bharat Forge Supply",
@@ -563,7 +563,7 @@
     },
     {
       "date": "2024-04-27",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Apex Industrial Gases",
@@ -572,7 +572,7 @@
     },
     {
       "date": "2024-04-28",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Mahindra Supplier Hub",
@@ -581,7 +581,7 @@
     },
     {
       "date": "2024-05-03",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Adani Logistics Partner",
@@ -590,7 +590,7 @@
     },
     {
       "date": "2024-05-04",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "National Logistics Transport",
@@ -608,7 +608,7 @@
     },
     {
       "date": "2024-05-07",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Mahindra Supplier Hub",
@@ -617,7 +617,7 @@
     },
     {
       "date": "2024-05-08",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Hindalco Metal Suppliers",
@@ -626,7 +626,7 @@
     },
     {
       "date": "2024-05-11",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bajaj Auto Vendor Corp",
@@ -635,7 +635,7 @@
     },
     {
       "date": "2024-05-12",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "National Logistics Transport",
@@ -653,7 +653,7 @@
     },
     {
       "date": "2024-05-15",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Tata Motors Ancillary Ltd",
@@ -662,7 +662,7 @@
     },
     {
       "date": "2024-05-16",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Hindalco Metal Suppliers",
@@ -671,7 +671,7 @@
     },
     {
       "date": "2024-05-18",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Reliance Retail Distribution",
@@ -680,7 +680,7 @@
     },
     {
       "date": "2024-05-20",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "National Logistics Transport",
@@ -689,7 +689,7 @@
     },
     {
       "date": "2024-05-22",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bharat Forge Supply",
@@ -698,7 +698,7 @@
     },
     {
       "date": "2024-05-24",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Hindalco Metal Suppliers",
@@ -707,7 +707,7 @@
     },
     {
       "date": "2024-05-25",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Mahindra Supplier Hub",
@@ -716,7 +716,7 @@
     },
     {
       "date": "2024-05-27",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Universal Raw Materials",
@@ -725,7 +725,7 @@
     },
     {
       "date": "2024-05-28",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Godrej Consumer Vendor",
@@ -734,7 +734,7 @@
     },
     {
       "date": "2024-06-03",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Mahindra Supplier Hub",
@@ -743,7 +743,7 @@
     },
     {
       "date": "2024-06-04",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Universal Raw Materials",
@@ -761,7 +761,7 @@
     },
     {
       "date": "2024-06-07",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bajaj Auto Vendor Corp",
@@ -770,7 +770,7 @@
     },
     {
       "date": "2024-06-08",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Standard Packing Material Corp",
@@ -779,7 +779,7 @@
     },
     {
       "date": "2024-06-11",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Tata Motors Ancillary Ltd",
@@ -788,7 +788,7 @@
     },
     {
       "date": "2024-06-12",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Universal Raw Materials",
@@ -797,7 +797,7 @@
     },
     {
       "date": "2024-06-15",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Godrej Consumer Vendor",
@@ -806,7 +806,7 @@
     },
     {
       "date": "2024-06-16",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Standard Packing Material Corp",
@@ -815,7 +815,7 @@
     },
     {
       "date": "2024-06-18",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bharat Forge Supply",
@@ -824,7 +824,7 @@
     },
     {
       "date": "2024-06-20",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Universal Raw Materials",
@@ -833,7 +833,7 @@
     },
     {
       "date": "2024-06-22",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Larsen Heavy Fab",
@@ -842,7 +842,7 @@
     },
     {
       "date": "2024-06-24",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Standard Packing Material Corp",
@@ -851,7 +851,7 @@
     },
     {
       "date": "2024-06-25",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bajaj Auto Vendor Corp",
@@ -860,7 +860,7 @@
     },
     {
       "date": "2024-06-27",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Tata Power Industrial",
@@ -869,7 +869,7 @@
     },
     {
       "date": "2024-06-28",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Infosys Infra vendor",
@@ -878,7 +878,7 @@
     },
     {
       "date": "2024-07-03",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Godrej Consumer Vendor",
@@ -887,7 +887,7 @@
     },
     {
       "date": "2024-07-04",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "JSW Steel Depot",
@@ -905,7 +905,7 @@
     },
     {
       "date": "2024-07-07",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Infosys Infra vendor",
@@ -914,7 +914,7 @@
     },
     {
       "date": "2024-07-08",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Apex Industrial Gases",
@@ -923,7 +923,7 @@
     },
     {
       "date": "2024-07-11",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Reliance Retail Distribution",
@@ -932,7 +932,7 @@
     },
     {
       "date": "2024-07-12",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "JSW Steel Depot",
@@ -941,7 +941,7 @@
     },
     {
       "date": "2024-07-15",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bharat Forge Supply",
@@ -950,7 +950,7 @@
     },
     {
       "date": "2024-07-16",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Apex Industrial Gases",
@@ -959,7 +959,7 @@
     },
     {
       "date": "2024-07-18",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Mahindra Supplier Hub",
@@ -968,7 +968,7 @@
     },
     {
       "date": "2024-07-20",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "JSW Steel Depot",
@@ -977,7 +977,7 @@
     },
     {
       "date": "2024-07-22",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bajaj Auto Vendor Corp",
@@ -986,7 +986,7 @@
     },
     {
       "date": "2024-07-24",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Apex Industrial Gases",
@@ -995,7 +995,7 @@
     },
     {
       "date": "2024-07-25",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Infosys Infra vendor",
@@ -1004,7 +1004,7 @@
     },
     {
       "date": "2024-07-27",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Hindalco Metal Suppliers",
@@ -1013,7 +1013,7 @@
     },
     {
       "date": "2024-07-28",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Larsen Heavy Fab",
@@ -1022,7 +1022,7 @@
     },
     {
       "date": "2024-08-03",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Infosys Infra vendor",
@@ -1031,7 +1031,7 @@
     },
     {
       "date": "2024-08-04",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Hindalco Metal Suppliers",
@@ -1049,7 +1049,7 @@
     },
     {
       "date": "2024-08-07",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Reliance Retail Distribution",
@@ -1058,7 +1058,7 @@
     },
     {
       "date": "2024-08-08",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "National Logistics Transport",
@@ -1067,7 +1067,7 @@
     },
     {
       "date": "2024-08-11",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bharat Forge Supply",
@@ -1076,7 +1076,7 @@
     },
     {
       "date": "2024-08-12",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Hindalco Metal Suppliers",
@@ -1085,7 +1085,7 @@
     },
     {
       "date": "2024-08-15",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Larsen Heavy Fab",
@@ -1094,7 +1094,7 @@
     },
     {
       "date": "2024-08-16",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "National Logistics Transport",
@@ -1103,7 +1103,7 @@
     },
     {
       "date": "2024-08-18",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bajaj Auto Vendor Corp",
@@ -1112,7 +1112,7 @@
     },
     {
       "date": "2024-08-20",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Hindalco Metal Suppliers",
@@ -1121,7 +1121,7 @@
     },
     {
       "date": "2024-08-22",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Tata Motors Ancillary Ltd",
@@ -1130,7 +1130,7 @@
     },
     {
       "date": "2024-08-24",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "National Logistics Transport",
@@ -1139,7 +1139,7 @@
     },
     {
       "date": "2024-08-25",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Reliance Retail Distribution",
@@ -1148,7 +1148,7 @@
     },
     {
       "date": "2024-08-27",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Standard Packing Material Corp",
@@ -1157,7 +1157,7 @@
     },
     {
       "date": "2024-08-28",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Adani Logistics Partner",
@@ -1166,7 +1166,7 @@
     },
     {
       "date": "2024-09-03",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Reliance Retail Distribution",
@@ -1175,7 +1175,7 @@
     },
     {
       "date": "2024-09-04",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Standard Packing Material Corp",
@@ -1193,7 +1193,7 @@
     },
     {
       "date": "2024-09-07",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bharat Forge Supply",
@@ -1202,7 +1202,7 @@
     },
     {
       "date": "2024-09-08",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Universal Raw Materials",
@@ -1211,7 +1211,7 @@
     },
     {
       "date": "2024-09-11",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Larsen Heavy Fab",
@@ -1220,7 +1220,7 @@
     },
     {
       "date": "2024-09-12",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Standard Packing Material Corp",
@@ -1229,7 +1229,7 @@
     },
     {
       "date": "2024-09-15",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Adani Logistics Partner",
@@ -1238,7 +1238,7 @@
     },
     {
       "date": "2024-09-16",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Universal Raw Materials",
@@ -1247,7 +1247,7 @@
     },
     {
       "date": "2024-09-18",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Tata Motors Ancillary Ltd",
@@ -1256,7 +1256,7 @@
     },
     {
       "date": "2024-09-20",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Standard Packing Material Corp",
@@ -1265,7 +1265,7 @@
     },
     {
       "date": "2024-09-22",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Godrej Consumer Vendor",
@@ -1274,7 +1274,7 @@
     },
     {
       "date": "2024-09-24",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Universal Raw Materials",
@@ -1283,7 +1283,7 @@
     },
     {
       "date": "2024-09-25",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bharat Forge Supply",
@@ -1292,7 +1292,7 @@
     },
     {
       "date": "2024-09-27",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Shree Cement Distributors",
@@ -1301,7 +1301,7 @@
     },
     {
       "date": "2024-09-28",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Mahindra Supplier Hub",
@@ -1310,7 +1310,7 @@
     },
     {
       "date": "2024-10-03",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Adani Logistics Partner",
@@ -1319,7 +1319,7 @@
     },
     {
       "date": "2024-10-04",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Apex Industrial Gases",
@@ -1337,7 +1337,7 @@
     },
     {
       "date": "2024-10-07",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Mahindra Supplier Hub",
@@ -1346,7 +1346,7 @@
     },
     {
       "date": "2024-10-08",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "JSW Steel Depot",
@@ -1355,7 +1355,7 @@
     },
     {
       "date": "2024-10-11",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bajaj Auto Vendor Corp",
@@ -1364,7 +1364,7 @@
     },
     {
       "date": "2024-10-12",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Apex Industrial Gases",
@@ -1373,7 +1373,7 @@
     },
     {
       "date": "2024-10-15",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Tata Motors Ancillary Ltd",
@@ -1382,7 +1382,7 @@
     },
     {
       "date": "2024-10-16",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "JSW Steel Depot",
@@ -1391,7 +1391,7 @@
     },
     {
       "date": "2024-10-18",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Reliance Retail Distribution",
@@ -1400,7 +1400,7 @@
     },
     {
       "date": "2024-10-20",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Apex Industrial Gases",
@@ -1409,7 +1409,7 @@
     },
     {
       "date": "2024-10-22",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bharat Forge Supply",
@@ -1418,7 +1418,7 @@
     },
     {
       "date": "2024-10-24",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "JSW Steel Depot",
@@ -1427,7 +1427,7 @@
     },
     {
       "date": "2024-10-25",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Mahindra Supplier Hub",
@@ -1436,7 +1436,7 @@
     },
     {
       "date": "2024-10-27",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "National Logistics Transport",
@@ -1445,7 +1445,7 @@
     },
     {
       "date": "2024-10-28",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Godrej Consumer Vendor",
@@ -1454,7 +1454,7 @@
     },
     {
       "date": "2024-11-03",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Mahindra Supplier Hub",
@@ -1463,7 +1463,7 @@
     },
     {
       "date": "2024-11-04",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "National Logistics Transport",
@@ -1481,7 +1481,7 @@
     },
     {
       "date": "2024-11-07",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bajaj Auto Vendor Corp",
@@ -1490,7 +1490,7 @@
     },
     {
       "date": "2024-11-08",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Hindalco Metal Suppliers",
@@ -1499,7 +1499,7 @@
     },
     {
       "date": "2024-11-11",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Tata Motors Ancillary Ltd",
@@ -1508,7 +1508,7 @@
     },
     {
       "date": "2024-11-12",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "National Logistics Transport",
@@ -1517,7 +1517,7 @@
     },
     {
       "date": "2024-11-15",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Godrej Consumer Vendor",
@@ -1526,7 +1526,7 @@
     },
     {
       "date": "2024-11-16",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Hindalco Metal Suppliers",
@@ -1535,7 +1535,7 @@
     },
     {
       "date": "2024-11-18",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bharat Forge Supply",
@@ -1544,7 +1544,7 @@
     },
     {
       "date": "2024-11-20",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "National Logistics Transport",
@@ -1553,7 +1553,7 @@
     },
     {
       "date": "2024-11-22",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Larsen Heavy Fab",
@@ -1562,7 +1562,7 @@
     },
     {
       "date": "2024-11-24",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Hindalco Metal Suppliers",
@@ -1571,7 +1571,7 @@
     },
     {
       "date": "2024-11-25",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bajaj Auto Vendor Corp",
@@ -1580,7 +1580,7 @@
     },
     {
       "date": "2024-11-27",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Universal Raw Materials",
@@ -1589,7 +1589,7 @@
     },
     {
       "date": "2024-11-28",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Infosys Infra vendor",
@@ -1598,7 +1598,7 @@
     },
     {
       "date": "2024-12-03",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Godrej Consumer Vendor",
@@ -1607,7 +1607,7 @@
     },
     {
       "date": "2024-12-04",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Tata Power Industrial",
@@ -1625,7 +1625,7 @@
     },
     {
       "date": "2024-12-07",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Infosys Infra vendor",
@@ -1634,7 +1634,7 @@
     },
     {
       "date": "2024-12-08",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Shree Cement Distributors",
@@ -1643,7 +1643,7 @@
     },
     {
       "date": "2024-12-11",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Reliance Retail Distribution",
@@ -1652,7 +1652,7 @@
     },
     {
       "date": "2024-12-12",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Tata Power Industrial",
@@ -1661,7 +1661,7 @@
     },
     {
       "date": "2024-12-15",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bharat Forge Supply",
@@ -1670,7 +1670,7 @@
     },
     {
       "date": "2024-12-16",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Shree Cement Distributors",
@@ -1679,7 +1679,7 @@
     },
     {
       "date": "2024-12-18",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Mahindra Supplier Hub",
@@ -1688,7 +1688,7 @@
     },
     {
       "date": "2024-12-20",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Tata Power Industrial",
@@ -1697,7 +1697,7 @@
     },
     {
       "date": "2024-12-22",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Bajaj Auto Vendor Corp",
@@ -1706,7 +1706,7 @@
     },
     {
       "date": "2024-12-24",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "Shree Cement Distributors",
@@ -1715,7 +1715,7 @@
     },
     {
       "date": "2024-12-25",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Infosys Infra vendor",
@@ -1724,7 +1724,7 @@
     },
     {
       "date": "2024-12-27",
-      "amount": "75000.00",
+      "amount": "74752.50",
       "type": "DEBIT",
       "category": "VENDOR_PAYMENT",
       "counterparty": "JSW Steel Depot",
@@ -1733,7 +1733,7 @@
     },
     {
       "date": "2024-12-28",
-      "amount": "125000.00",
+      "amount": "124587.50",
       "type": "CREDIT",
       "category": "SALES_RECEIPT",
       "counterparty": "Larsen Heavy Fab",

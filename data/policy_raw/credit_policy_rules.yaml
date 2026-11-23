@@ -8,9 +8,16 @@ eligibility:
     min_vintage_months: 24
     referral_min_months: 6
     decline_below_months: 6
+    actions:
+      below_6: "DECLINE"
+      between_6_and_23: "REFER"
+      24_and_above: "APPROVE"
   ELIG-02:
     description: "Minimum Annualized Turnover in INR"
     min_turnover_annual: "2500000.00"
+    actions:
+      below_25L: "DECLINE"
+      25L_and_above: "APPROVE"
   ELIG-03:
     eligible_entity_types:
       - "PROPRIETORSHIP"
@@ -21,33 +28,72 @@ financial_thresholds:
   FIN-01:
     description: "DSCR Proxy"
     approve_min: "1.2500"
-    referral_min: "1.1000"
+    referral_min: "1.0000"
     decline_below: "1.0000"
+    actions:
+      below_1_00: "DECLINE"
+      between_1_00_and_1_25: "REFER"
+      1_25_and_above: "APPROVE"
   FIN-02:
-    description: "AMB vs proposed EMI ratio"
+    description: "AMB vs proposed monthly EMI ratio (AMB / Proposed EMI)"
     min_amb_to_proposed_emi_ratio: "0.1000"
+    actions:
+      below_0_10: "REFER"
+      0_10_and_above: "APPROVE"
   FIN-03:
     description: "Inward Clearing Returns (Cheque/NACH/ECS)"
-    max_12m_returns_referral: 2
+    max_clean_returns: 0
+    max_referral_returns: 3
     decline_if_greater_than: 3
+    actions:
+      0_returns: "APPROVE"
+      1_to_3_returns: "REFER"
+      greater_than_3: "DECLINE"
   FIN-04:
     description: "Fixed Obligation to Income Ratio (FOIR)"
     max_foir: "0.5000"
+    actions:
+      greater_than_0_50: "REFER"
+      0_50_and_below: "APPROVE"
   FIN-05:
     description: "Counterparty Concentration (Top-1 Share)"
     max_top1_share: "0.4000"
+    actions:
+      greater_than_0_40: "REFER"
+      0_40_and_below: "APPROVE"
   FIN-06:
-    description: "Cash Flow Volatility (CV of operating inflow)"
+    description: "Cash Flow Volatility (CV of monthly operating inflow)"
     max_cv: "0.6000"
+    actions:
+      greater_than_0_60: "REFER"
+      0_60_and_below: "APPROVE"
   FIN-07:
     description: "Round-Trip Ratio (round trip credits / gross credits)"
     max_round_trip_ratio: "0.0200"
+    actions:
+      greater_than_0_02: "REFER"
+      0_02_and_below: "APPROVE"
 
 verification:
   DOC-01:
     min_field_confidence: "0.8500"
   DOC-02:
-    max_gst_turnover_discrepancy_pct: "0.2000"
+    description: "GSTR-3B vs Bank Operating Inflow Turnover Discrepancy Band"
+    min_gst_to_bank_ratio: "0.8000"
+    max_gst_to_bank_ratio: "1.2000"
+    actions:
+      outside_band_0_80_to_1_20: "REFER"
+      within_band: "APPROVE"
+
+near_threshold_definition:
+  continuous_rule: "|metric - threshold| <= 0.10 * threshold (within 10% of threshold)"
+  discrete_rules:
+    ELIG-01_vintage_24m: "|vintage - 24| <= 2 months"
+    ELIG-01_vintage_6m: "|vintage - 6| <= 1 month"
+    FIN-03_bounces_referral: "inward_returns in [0, 1]"
+    FIN-03_bounces_decline: "inward_returns in [3, 4]"
+    DOC-02_band_boundaries: "ratio in [0.7800, 0.8200] or ratio in [1.1800, 1.2200]"
+  margin_sign_convention: "positive (+) = passing side (compliant); negative (-) = failing side (triggers clause); zero (0) = exactly at threshold"
 
 authority:
   AUTH-01:

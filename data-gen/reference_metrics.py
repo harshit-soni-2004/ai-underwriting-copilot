@@ -64,6 +64,7 @@ class ReferenceMetricsOracle:
         annual_inflow = avg_inflow * Decimal("12")
         if annual_inflow < Decimal("2500000.00"):
             triggered.append("ELIG-02")
+            is_decline = True
 
         # FIN-01: DSCR Proxy
         dscr_str = metrics.get("dscr_proxy")
@@ -131,6 +132,140 @@ class ReferenceMetricsOracle:
             return "REFER", unique_triggered
         else:
             return "APPROVE", []
+
+    @classmethod
+    def analyze_near_threshold(
+        cls,
+        clause: str,
+        metrics: Dict[str, Any],
+        profile: Dict[str, Any],
+        target_boundary: Optional[str] = None
+    ) -> Dict[str, Any]:
+        """
+        Deterministically evaluates whether an applicant is near-threshold (within 10% of threshold).
+        Computes the signed margin strictly from computed oracle metrics.
+        Margin sign convention: positive (>=0) = passing side; negative (<0) = failing side.
+        """
+        is_near = False
+        metric_val_str = ""
+        threshold_str = ""
+        margin_str = ""
+        side_str = "just-failing"
+
+        if clause == "FIN-01":
+            dscr = Decimal(metrics["dscr_proxy"])
+            margin = dscr - Decimal("1.2500")
+            is_near = abs(margin) <= Decimal("0.1250")
+            metric_val_str = str(quantize_ratio(dscr))
+            threshold_str = "1.2500"
+            margin_str = f"{margin:+.4f}"
+            side_str = "just-passing" if margin >= 0 else "just-failing"
+
+        elif clause == "FIN-02":
+            amb = Decimal(metrics["average_monthly_balance"])
+            prop_emi = Decimal(str(profile.get("proposed_monthly_emi", "0.00")))
+            ratio = amb / prop_emi if prop_emi > Decimal("0") else Decimal("1.0000")
+            margin = ratio - Decimal("0.1000")
+            is_near = abs(margin) <= Decimal("0.0100")
+            metric_val_str = str(quantize_ratio(ratio))
+            threshold_str = "0.1000"
+            margin_str = f"{margin:+.4f}"
+            side_str = "just-passing" if margin >= 0 else "just-failing"
+
+        elif clause == "FIN-03":
+            inward_returns = int(metrics.get("inward_clearing_returns_count", 0))
+            if target_boundary == "decline" or inward_returns >= 3:
+                threshold_str = "3"
+                margin_int = 3 - inward_returns
+                is_near = inward_returns in [3, 4]
+            else:
+                threshold_str = "0"
+                margin_int = 0 - inward_returns
+                is_near = inward_returns in [0, 1]
+            metric_val_str = str(inward_returns)
+            margin_str = f"{margin_int:+d}"
+            side_str = "just-passing" if margin_int >= 0 else "just-failing"
+
+        elif clause == "FIN-04":
+            foir = Decimal(metrics["foir"])
+            margin = Decimal("0.5000") - foir
+            is_near = abs(foir - Decimal("0.5000")) <= Decimal("0.0500")
+            metric_val_str = str(quantize_ratio(foir))
+            threshold_str = "0.5000"
+            margin_str = f"{margin:+.4f}"
+            side_str = "just-passing" if margin >= 0 else "just-failing"
+
+        elif clause == "FIN-05":
+            top1 = Decimal(metrics["counterparty_top1_share"])
+            margin = Decimal("0.4000") - top1
+            is_near = abs(top1 - Decimal("0.4000")) <= Decimal("0.0400")
+            metric_val_str = str(quantize_ratio(top1))
+            threshold_str = "0.4000"
+            margin_str = f"{margin:+.4f}"
+            side_str = "just-passing" if margin >= 0 else "just-failing"
+
+        elif clause == "FIN-06":
+            cv = Decimal(metrics["cash_flow_volatility_cv"])
+            margin = Decimal("0.6000") - cv
+            is_near = abs(cv - Decimal("0.6000")) <= Decimal("0.0600")
+            metric_val_str = str(quantize_ratio(cv))
+            threshold_str = "0.6000"
+            margin_str = f"{margin:+.4f}"
+            side_str = "just-passing" if margin >= 0 else "just-failing"
+
+        elif clause == "FIN-07":
+            rt_ratio = Decimal(metrics["round_trip_ratio"])
+            margin = Decimal("0.0200") - rt_ratio
+            is_near = abs(rt_ratio - Decimal("0.0200")) <= Decimal("0.0020")
+            metric_val_str = str(quantize_ratio(rt_ratio))
+            threshold_str = "0.0200"
+            margin_str = f"{margin:+.4f}"
+            side_str = "just-passing" if margin >= 0 else "just-failing"
+
+        elif clause == "ELIG-01":
+            vintage = int(profile.get("vintage_months", 24))
+            if target_boundary == "decline" or vintage <= 7:
+                threshold_str = "6"
+                margin_int = vintage - 6
+                is_near = abs(vintage - 6) <= 1
+            else:
+                threshold_str = "24"
+                margin_int = vintage - 24
+                is_near = abs(vintage - 24) <= 2
+            metric_val_str = str(vintage)
+            margin_str = f"{margin_int:+d}"
+            side_str = "just-passing" if margin_int >= 0 else "just-failing"
+
+        elif clause == "ELIG-02":
+            annual_inflow = Decimal(metrics["avg_monthly_operating_inflow"]) * Decimal("12")
+            margin = annual_inflow - Decimal("2500000.00")
+            is_near = abs(margin) <= Decimal("250000.00")
+            metric_val_str = str(quantize_money(annual_inflow))
+            threshold_str = "2500000.00"
+            margin_str = f"{margin:+.2f}"
+            side_str = "just-passing" if margin >= 0 else "just-failing"
+
+        elif clause == "DOC-02":
+            ratio = Decimal(metrics.get("gst_turnover_ratio", "1.0000"))
+            if ratio >= Decimal("1.0000"):
+                margin = Decimal("1.2000") - ratio
+                is_near = abs(ratio - Decimal("1.2000")) <= Decimal("0.0200")
+                threshold_str = "1.2000"
+            else:
+                margin = ratio - Decimal("0.8000")
+                is_near = abs(ratio - Decimal("0.8000")) <= Decimal("0.0200")
+                threshold_str = "0.8000"
+            metric_val_str = str(quantize_ratio(ratio))
+            margin_str = f"{margin:+.4f}"
+            side_str = "just-passing" if margin >= 0 else "just-failing"
+
+        return {
+            "is_near_threshold": is_near,
+            "metric_value": metric_val_str,
+            "threshold": threshold_str,
+            "margin": margin_str,
+            "side": side_str
+        }
 
     @classmethod
     def calculate_all(
@@ -342,8 +477,9 @@ class ReferenceMetricsOracle:
             round_trip_ratio = Decimal("0.0000")
 
         # 10. GST vs Bank Turnover Discrepancy Ratio
-        if gstr3b_annual_taxable_supplies is not None and total_operating_inflows > Decimal("0"):
-            gst_turnover_ratio = gstr3b_annual_taxable_supplies / total_operating_inflows
+        annual_bank_inflow = avg_monthly_inflow * Decimal("12")
+        if gstr3b_annual_taxable_supplies is not None and annual_bank_inflow > Decimal("0"):
+            gst_turnover_ratio = gstr3b_annual_taxable_supplies / annual_bank_inflow
         else:
             gst_turnover_ratio = None
 

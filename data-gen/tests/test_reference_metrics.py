@@ -6,7 +6,9 @@ import pytest
 from reference_metrics import ReferenceMetricsOracle
 
 def test_canonical_hand_worked_fixtures_from_json():
-    fixtures_file = Path(__file__).resolve().parent.parent.parent / "data" / "fixtures" / "canonical_hand_worked_fixtures.json"
+    fixtures_file = Path(__file__).resolve().parent.parent.parent / "data" / "fixtures" / "handworked" / "canonical_hand_worked_fixtures.json"
+    if not fixtures_file.exists():
+        fixtures_file = Path(__file__).resolve().parent.parent.parent / "data" / "fixtures" / "canonical_hand_worked_fixtures.json"
     with open(fixtures_file, "r", encoding="utf-8") as f:
         fixtures = json.load(f)
 
@@ -43,8 +45,8 @@ def test_canonical_hand_worked_fixtures_from_json():
     ("ELIG-01", "vintage_months", 24, {}, "APPROVE", False),
     ("ELIG-01", "vintage_months", 25, {}, "APPROVE", False),
 
-    # ELIG-02 (Turnover annual: <25L refer, >=25L pass)
-    ("ELIG-02", "avg_monthly_operating_inflow", "200000.00", {}, "REFER", True),     # 24.0 Lakh
+    # ELIG-02 (Turnover annual: <25L decline, >=25L pass)
+    ("ELIG-02", "avg_monthly_operating_inflow", "200000.00", {}, "DECLINE", True),     # 24.0 Lakh (<25L decline)
     ("ELIG-02", "avg_monthly_operating_inflow", "208333.34", {}, "APPROVE", False),   # 25.0 Lakh (>=25L pass)
     ("ELIG-02", "avg_monthly_operating_inflow", "220000.00", {}, "APPROVE", False),   # 26.4 Lakh
 
