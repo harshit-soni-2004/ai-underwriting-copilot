@@ -23,7 +23,7 @@ eval:
 	python evals/run_all.py
 
 seed:
-	python data-gen/generate_data.py --applicants 100 --seed 42
+	python data-gen/generate_data.py --applicants 120 --seed 42
 
 clean:
 	cd core-service && mvn clean

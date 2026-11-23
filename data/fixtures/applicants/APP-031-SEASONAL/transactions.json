@@ -1,0 +1,1890 @@
+[
+  {
+    "date": "2024-01-01",
+    "amount": "28000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-1552"
+  },
+  {
+    "date": "2024-01-04",
+    "amount": "35700.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-6633"
+  },
+  {
+    "date": "2024-01-05",
+    "amount": "50000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #1"
+  },
+  {
+    "date": "2024-01-07",
+    "amount": "98100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-09",
+    "amount": "46900.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-5387"
+  },
+  {
+    "date": "2024-01-10",
+    "amount": "90000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-12",
+    "amount": "90000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-13",
+    "amount": "38150.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-9383"
+  },
+  {
+    "date": "2024-01-13",
+    "amount": "71100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-14",
+    "amount": "41300.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Mahindra Supplier Hub",
+    "narration": "NEFT CR-Mahindra Supplier -INV-4449"
+  },
+  {
+    "date": "2024-01-17",
+    "amount": "81900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-18",
+    "amount": "59850.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-9197"
+  },
+  {
+    "date": "2024-01-18",
+    "amount": "73800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-23",
+    "amount": "99000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-24",
+    "amount": "36000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-26",
+    "amount": "40250.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Mahindra Supplier Hub",
+    "narration": "NEFT CR-Mahindra Supplier -INV-6263"
+  },
+  {
+    "date": "2024-01-26",
+    "amount": "75600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-03",
+    "amount": "99000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-05",
+    "amount": "50000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #2"
+  },
+  {
+    "date": "2024-02-05",
+    "amount": "72900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-07",
+    "amount": "91800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-13",
+    "amount": "74700.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-16",
+    "amount": "88200.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-17",
+    "amount": "45900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-18",
+    "amount": "59400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-20",
+    "amount": "51300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-22",
+    "amount": "60200.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-7791"
+  },
+  {
+    "date": "2024-02-22",
+    "amount": "72000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-23",
+    "amount": "29400.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-2380"
+  },
+  {
+    "date": "2024-02-23",
+    "amount": "48600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-26",
+    "amount": "50400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-28",
+    "amount": "58500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-02",
+    "amount": "106200.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-05",
+    "amount": "50000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #3"
+  },
+  {
+    "date": "2024-03-05",
+    "amount": "64800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-07",
+    "amount": "60900.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-4531"
+  },
+  {
+    "date": "2024-03-11",
+    "amount": "86400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-13",
+    "amount": "95400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-14",
+    "amount": "23400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-17",
+    "amount": "53550.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-4138"
+  },
+  {
+    "date": "2024-03-17",
+    "amount": "72900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-18",
+    "amount": "56700.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-23",
+    "amount": "72900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-25",
+    "amount": "41400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-30",
+    "amount": "45000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-01",
+    "amount": "108000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-02",
+    "amount": "108000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-5906"
+  },
+  {
+    "date": "2024-04-02",
+    "amount": "38700.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-03",
+    "amount": "146000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-2786"
+  },
+  {
+    "date": "2024-04-04",
+    "amount": "27900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-05",
+    "amount": "50000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #4"
+  },
+  {
+    "date": "2024-04-05",
+    "amount": "169000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-7292"
+  },
+  {
+    "date": "2024-04-07",
+    "amount": "176000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Mahindra Supplier Hub",
+    "narration": "NEFT CR-Mahindra Supplier -INV-1552"
+  },
+  {
+    "date": "2024-04-07",
+    "amount": "27900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-17",
+    "amount": "90000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-7967"
+  },
+  {
+    "date": "2024-04-19",
+    "amount": "94000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Mahindra Supplier Hub",
+    "narration": "NEFT CR-Mahindra Supplier -INV-8568"
+  },
+  {
+    "date": "2024-04-22",
+    "amount": "105300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-26",
+    "amount": "29700.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-30",
+    "amount": "83700.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-05-03",
+    "amount": "52000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-3604"
+  },
+  {
+    "date": "2024-05-03",
+    "amount": "100800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-05-05",
+    "amount": "50000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #5"
+  },
+  {
+    "date": "2024-05-07",
+    "amount": "103500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-05-09",
+    "amount": "51300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-05-10",
+    "amount": "82800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-05-13",
+    "amount": "52000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Mahindra Supplier Hub",
+    "narration": "NEFT CR-Mahindra Supplier -INV-2127"
+  },
+  {
+    "date": "2024-05-13",
+    "amount": "89100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-05-14",
+    "amount": "154000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-4708"
+  },
+  {
+    "date": "2024-05-17",
+    "amount": "48000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-5151"
+  },
+  {
+    "date": "2024-05-19",
+    "amount": "80000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Mahindra Supplier Hub",
+    "narration": "NEFT CR-Mahindra Supplier -INV-6200"
+  },
+  {
+    "date": "2024-05-20",
+    "amount": "160000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Mahindra Supplier Hub",
+    "narration": "NEFT CR-Mahindra Supplier -INV-4680"
+  },
+  {
+    "date": "2024-05-20",
+    "amount": "85500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-05-23",
+    "amount": "154000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-4210"
+  },
+  {
+    "date": "2024-05-23",
+    "amount": "42300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-05-24",
+    "amount": "91000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-8978"
+  },
+  {
+    "date": "2024-05-26",
+    "amount": "49000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-1049"
+  },
+  {
+    "date": "2024-05-30",
+    "amount": "53000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-2547"
+  },
+  {
+    "date": "2024-05-30",
+    "amount": "85500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-01",
+    "amount": "44000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-1258"
+  },
+  {
+    "date": "2024-06-02",
+    "amount": "51300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-04",
+    "amount": "86000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-7074"
+  },
+  {
+    "date": "2024-06-05",
+    "amount": "50000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #6"
+  },
+  {
+    "date": "2024-06-06",
+    "amount": "63900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-08",
+    "amount": "125000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-3978"
+  },
+  {
+    "date": "2024-06-11",
+    "amount": "70000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-4542"
+  },
+  {
+    "date": "2024-06-12",
+    "amount": "107000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Mahindra Supplier Hub",
+    "narration": "NEFT CR-Mahindra Supplier -INV-5607"
+  },
+  {
+    "date": "2024-06-13",
+    "amount": "50400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-14",
+    "amount": "180000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-2670"
+  },
+  {
+    "date": "2024-06-14",
+    "amount": "65700.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-15",
+    "amount": "162000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-3300"
+  },
+  {
+    "date": "2024-06-15",
+    "amount": "73800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-17",
+    "amount": "58500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-18",
+    "amount": "36900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-19",
+    "amount": "32400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-20",
+    "amount": "60000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-4984"
+  },
+  {
+    "date": "2024-06-20",
+    "amount": "91800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-22",
+    "amount": "162000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-4039"
+  },
+  {
+    "date": "2024-06-24",
+    "amount": "77000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-5168"
+  },
+  {
+    "date": "2024-06-24",
+    "amount": "81900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-26",
+    "amount": "158000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-2352"
+  },
+  {
+    "date": "2024-06-26",
+    "amount": "85500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-27",
+    "amount": "96000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-1061"
+  },
+  {
+    "date": "2024-06-28",
+    "amount": "59000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-4975"
+  },
+  {
+    "date": "2024-07-03",
+    "amount": "44000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-7819"
+  },
+  {
+    "date": "2024-07-05",
+    "amount": "50000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #7"
+  },
+  {
+    "date": "2024-07-05",
+    "amount": "45000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-06",
+    "amount": "26100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-08",
+    "amount": "108000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-15",
+    "amount": "77400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-16",
+    "amount": "93000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-2048"
+  },
+  {
+    "date": "2024-07-18",
+    "amount": "107100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-19",
+    "amount": "150000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-3988"
+  },
+  {
+    "date": "2024-07-21",
+    "amount": "72900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-22",
+    "amount": "42300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-24",
+    "amount": "57600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-25",
+    "amount": "68400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-26",
+    "amount": "28800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-29",
+    "amount": "31500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-30",
+    "amount": "27000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-01",
+    "amount": "230400.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-4745"
+  },
+  {
+    "date": "2024-08-03",
+    "amount": "352800.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-4598"
+  },
+  {
+    "date": "2024-08-04",
+    "amount": "388800.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-4690"
+  },
+  {
+    "date": "2024-08-05",
+    "amount": "50000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #8"
+  },
+  {
+    "date": "2024-08-07",
+    "amount": "283200.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-5537"
+  },
+  {
+    "date": "2024-08-08",
+    "amount": "319200.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-1410"
+  },
+  {
+    "date": "2024-08-09",
+    "amount": "104400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-10",
+    "amount": "364800.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-4402"
+  },
+  {
+    "date": "2024-08-12",
+    "amount": "417600.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-9478"
+  },
+  {
+    "date": "2024-08-14",
+    "amount": "33300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-15",
+    "amount": "153600.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-4361"
+  },
+  {
+    "date": "2024-08-17",
+    "amount": "268800.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-8524"
+  },
+  {
+    "date": "2024-08-17",
+    "amount": "84600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-19",
+    "amount": "379200.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-5202"
+  },
+  {
+    "date": "2024-08-20",
+    "amount": "314400.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-3935"
+  },
+  {
+    "date": "2024-08-22",
+    "amount": "28800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-23",
+    "amount": "82800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-25",
+    "amount": "23400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-27",
+    "amount": "429600.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-2677"
+  },
+  {
+    "date": "2024-08-28",
+    "amount": "400800.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-3469"
+  },
+  {
+    "date": "2024-08-28",
+    "amount": "62100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-29",
+    "amount": "129600.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-6467"
+  },
+  {
+    "date": "2024-08-29",
+    "amount": "79200.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-30",
+    "amount": "184800.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-8953"
+  },
+  {
+    "date": "2024-09-02",
+    "amount": "45000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-03",
+    "amount": "96000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-5281"
+  },
+  {
+    "date": "2024-09-03",
+    "amount": "66600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-04",
+    "amount": "66600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-05",
+    "amount": "50000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #9"
+  },
+  {
+    "date": "2024-09-05",
+    "amount": "249600.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-3701"
+  },
+  {
+    "date": "2024-09-06",
+    "amount": "184800.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-8575"
+  },
+  {
+    "date": "2024-09-06",
+    "amount": "97200.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-07",
+    "amount": "106200.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-08",
+    "amount": "316800.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-3040"
+  },
+  {
+    "date": "2024-09-08",
+    "amount": "33300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-11",
+    "amount": "103200.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-7735"
+  },
+  {
+    "date": "2024-09-12",
+    "amount": "106200.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-13",
+    "amount": "276000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-4580"
+  },
+  {
+    "date": "2024-09-14",
+    "amount": "372000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-4494"
+  },
+  {
+    "date": "2024-09-15",
+    "amount": "432000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-8937"
+  },
+  {
+    "date": "2024-09-16",
+    "amount": "237600.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Mahindra Supplier Hub",
+    "narration": "NEFT CR-Mahindra Supplier -INV-5836"
+  },
+  {
+    "date": "2024-09-20",
+    "amount": "46800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-21",
+    "amount": "98100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-22",
+    "amount": "151200.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-6870"
+  },
+  {
+    "date": "2024-09-23",
+    "amount": "319200.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-9139"
+  },
+  {
+    "date": "2024-09-23",
+    "amount": "92700.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-26",
+    "amount": "84600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-27",
+    "amount": "304800.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-1451"
+  },
+  {
+    "date": "2024-09-28",
+    "amount": "63000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-29",
+    "amount": "264000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-1184"
+  },
+  {
+    "date": "2024-09-29",
+    "amount": "27900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-01",
+    "amount": "364800.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-4443"
+  },
+  {
+    "date": "2024-10-02",
+    "amount": "103500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-03",
+    "amount": "94500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-04",
+    "amount": "182400.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Mahindra Supplier Hub",
+    "narration": "NEFT CR-Mahindra Supplier -INV-6404"
+  },
+  {
+    "date": "2024-10-05",
+    "amount": "50000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #10"
+  },
+  {
+    "date": "2024-10-06",
+    "amount": "206400.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-9951"
+  },
+  {
+    "date": "2024-10-07",
+    "amount": "94500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-10",
+    "amount": "127200.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Mahindra Supplier Hub",
+    "narration": "NEFT CR-Mahindra Supplier -INV-7786"
+  },
+  {
+    "date": "2024-10-10",
+    "amount": "52200.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-11",
+    "amount": "412800.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-8206"
+  },
+  {
+    "date": "2024-10-14",
+    "amount": "108000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-16",
+    "amount": "144000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Mahindra Supplier Hub",
+    "narration": "NEFT CR-Mahindra Supplier -INV-9936"
+  },
+  {
+    "date": "2024-10-16",
+    "amount": "103500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-17",
+    "amount": "240000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-3950"
+  },
+  {
+    "date": "2024-10-17",
+    "amount": "40500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-18",
+    "amount": "256800.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-4608"
+  },
+  {
+    "date": "2024-10-18",
+    "amount": "63900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-19",
+    "amount": "355200.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-5013"
+  },
+  {
+    "date": "2024-10-20",
+    "amount": "232800.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-4744"
+  },
+  {
+    "date": "2024-10-22",
+    "amount": "268800.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-7867"
+  },
+  {
+    "date": "2024-10-22",
+    "amount": "99900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-24",
+    "amount": "204000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-7043"
+  },
+  {
+    "date": "2024-10-26",
+    "amount": "321600.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-8577"
+  },
+  {
+    "date": "2024-10-28",
+    "amount": "72900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-30",
+    "amount": "292800.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-4863"
+  },
+  {
+    "date": "2024-10-31",
+    "amount": "336000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-9716"
+  },
+  {
+    "date": "2024-11-03",
+    "amount": "127200.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-7061"
+  },
+  {
+    "date": "2024-11-03",
+    "amount": "88200.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-05",
+    "amount": "50000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #11"
+  },
+  {
+    "date": "2024-11-06",
+    "amount": "148800.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Mahindra Supplier Hub",
+    "narration": "NEFT CR-Mahindra Supplier -INV-6168"
+  },
+  {
+    "date": "2024-11-06",
+    "amount": "99900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-07",
+    "amount": "158400.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-6947"
+  },
+  {
+    "date": "2024-11-08",
+    "amount": "362400.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-4279"
+  },
+  {
+    "date": "2024-11-08",
+    "amount": "27000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-10",
+    "amount": "187200.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-1676"
+  },
+  {
+    "date": "2024-11-12",
+    "amount": "201600.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-3419"
+  },
+  {
+    "date": "2024-11-14",
+    "amount": "336000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-8438"
+  },
+  {
+    "date": "2024-11-15",
+    "amount": "64800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-18",
+    "amount": "211200.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-6145"
+  },
+  {
+    "date": "2024-11-20",
+    "amount": "177600.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Mahindra Supplier Hub",
+    "narration": "NEFT CR-Mahindra Supplier -INV-5532"
+  },
+  {
+    "date": "2024-11-21",
+    "amount": "290400.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-7791"
+  },
+  {
+    "date": "2024-11-22",
+    "amount": "67500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-24",
+    "amount": "44100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-25",
+    "amount": "321600.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-9339"
+  },
+  {
+    "date": "2024-11-25",
+    "amount": "68400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-26",
+    "amount": "384000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-3821"
+  },
+  {
+    "date": "2024-11-26",
+    "amount": "56700.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-28",
+    "amount": "410400.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Mahindra Supplier Hub",
+    "narration": "NEFT CR-Mahindra Supplier -INV-1030"
+  },
+  {
+    "date": "2024-11-29",
+    "amount": "379200.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-2951"
+  },
+  {
+    "date": "2024-11-30",
+    "amount": "96000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-2698"
+  },
+  {
+    "date": "2024-12-03",
+    "amount": "161000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Infosys Infra vendor",
+    "narration": "NEFT CR-Infosys Infra vend-INV-4336"
+  },
+  {
+    "date": "2024-12-05",
+    "amount": "50000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #12"
+  },
+  {
+    "date": "2024-12-07",
+    "amount": "27900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-09",
+    "amount": "93600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-12",
+    "amount": "82800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-13",
+    "amount": "99900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-14",
+    "amount": "68000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Mahindra Supplier Hub",
+    "narration": "NEFT CR-Mahindra Supplier -INV-1734"
+  },
+  {
+    "date": "2024-12-14",
+    "amount": "28800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-17",
+    "amount": "86400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-18",
+    "amount": "42300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Universal Raw Materials",
+    "narration": "RTGS DR TO Universal Raw Ma MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-20",
+    "amount": "53000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-2934"
+  },
+  {
+    "date": "2024-12-21",
+    "amount": "130000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Mahindra Supplier Hub",
+    "narration": "NEFT CR-Mahindra Supplier -INV-5303"
+  },
+  {
+    "date": "2024-12-25",
+    "amount": "52200.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-29",
+    "amount": "152000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-2143"
+  },
+  {
+    "date": "2024-12-30",
+    "amount": "131000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-2751"
+  },
+  {
+    "date": "2024-12-30",
+    "amount": "63900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  }
+]

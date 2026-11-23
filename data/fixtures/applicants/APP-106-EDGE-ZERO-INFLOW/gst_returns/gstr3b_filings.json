@@ -1,0 +1,149 @@
+{
+  "applicant_id": "APP-106-EDGE-ZERO-INFLOW",
+  "gstr3b_filings": [
+    {
+      "return_period": "2024-01",
+      "gstin": "27DAAF8701B1Z4",
+      "arn": "AA20240100123456",
+      "status": "FILED",
+      "outward_taxable_supplies": "956662.91",
+      "igst_amount": "76533.03",
+      "cgst_amount": "47833.15",
+      "sgst_amount": "47833.15",
+      "eligible_itc": "129149.50",
+      "filing_date": "2024-01-20"
+    },
+    {
+      "return_period": "2024-02",
+      "gstin": "27DAAF8701B1Z4",
+      "arn": "AA20240200123456",
+      "status": "FILED",
+      "outward_taxable_supplies": "956662.91",
+      "igst_amount": "76533.03",
+      "cgst_amount": "47833.15",
+      "sgst_amount": "47833.15",
+      "eligible_itc": "129149.50",
+      "filing_date": "2024-02-20"
+    },
+    {
+      "return_period": "2024-03",
+      "gstin": "27DAAF8701B1Z4",
+      "arn": "AA20240300123456",
+      "status": "FILED",
+      "outward_taxable_supplies": "956662.91",
+      "igst_amount": "76533.03",
+      "cgst_amount": "47833.15",
+      "sgst_amount": "47833.15",
+      "eligible_itc": "129149.50",
+      "filing_date": "2024-03-20"
+    },
+    {
+      "return_period": "2024-04",
+      "gstin": "27DAAF8701B1Z4",
+      "arn": "AA20240400123456",
+      "status": "FILED",
+      "outward_taxable_supplies": "956662.91",
+      "igst_amount": "76533.03",
+      "cgst_amount": "47833.15",
+      "sgst_amount": "47833.15",
+      "eligible_itc": "129149.50",
+      "filing_date": "2024-04-20"
+    },
+    {
+      "return_period": "2024-05",
+      "gstin": "27DAAF8701B1Z4",
+      "arn": "AA20240500123456",
+      "status": "FILED",
+      "outward_taxable_supplies": "956662.91",
+      "igst_amount": "76533.03",
+      "cgst_amount": "47833.15",
+      "sgst_amount": "47833.15",
+      "eligible_itc": "129149.50",
+      "filing_date": "2024-05-20"
+    },
+    {
+      "return_period": "2024-06",
+      "gstin": "27DAAF8701B1Z4",
+      "arn": "AA20240600123456",
+      "status": "FILED",
+      "outward_taxable_supplies": "956662.91",
+      "igst_amount": "76533.03",
+      "cgst_amount": "47833.15",
+      "sgst_amount": "47833.15",
+      "eligible_itc": "129149.50",
+      "filing_date": "2024-06-20"
+    },
+    {
+      "return_period": "2024-07",
+      "gstin": "27DAAF8701B1Z4",
+      "arn": "AA20240700123456",
+      "status": "FILED",
+      "outward_taxable_supplies": "956662.91",
+      "igst_amount": "76533.03",
+      "cgst_amount": "47833.15",
+      "sgst_amount": "47833.15",
+      "eligible_itc": "129149.50",
+      "filing_date": "2024-07-20"
+    },
+    {
+      "return_period": "2024-08",
+      "gstin": "27DAAF8701B1Z4",
+      "arn": "AA20240800123456",
+      "status": "FILED",
+      "outward_taxable_supplies": "956662.91",
+      "igst_amount": "76533.03",
+      "cgst_amount": "47833.15",
+      "sgst_amount": "47833.15",
+      "eligible_itc": "129149.50",
+      "filing_date": "2024-08-20"
+    },
+    {
+      "return_period": "2024-09",
+      "gstin": "27DAAF8701B1Z4",
+      "arn": "AA20240900123456",
+      "status": "FILED",
+      "outward_taxable_supplies": "956662.91",
+      "igst_amount": "76533.03",
+      "cgst_amount": "47833.15",
+      "sgst_amount": "47833.15",
+      "eligible_itc": "129149.50",
+      "filing_date": "2024-09-20"
+    },
+    {
+      "return_period": "2024-10",
+      "gstin": "27DAAF8701B1Z4",
+      "arn": "AA20241000123456",
+      "status": "FILED",
+      "outward_taxable_supplies": "956662.91",
+      "igst_amount": "76533.03",
+      "cgst_amount": "47833.15",
+      "sgst_amount": "47833.15",
+      "eligible_itc": "129149.50",
+      "filing_date": "2024-10-20"
+    },
+    {
+      "return_period": "2024-11",
+      "gstin": "27DAAF8701B1Z4",
+      "arn": "AA20241100123456",
+      "status": "FILED",
+      "outward_taxable_supplies": "956662.91",
+      "igst_amount": "76533.03",
+      "cgst_amount": "47833.15",
+      "sgst_amount": "47833.15",
+      "eligible_itc": "129149.50",
+      "filing_date": "2024-11-20"
+    },
+    {
+      "return_period": "2024-12",
+      "gstin": "27DAAF8701B1Z4",
+      "arn": "AA20241200123456",
+      "status": "FILED",
+      "outward_taxable_supplies": "956662.91",
+      "igst_amount": "76533.03",
+      "cgst_amount": "47833.15",
+      "sgst_amount": "47833.15",
+      "eligible_itc": "129149.50",
+      "filing_date": "2024-12-20"
+    }
+  ]
+}

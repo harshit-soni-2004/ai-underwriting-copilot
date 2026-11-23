@@ -1,0 +1,2130 @@
+[
+  {
+    "date": "2024-01-01",
+    "amount": "72900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-03",
+    "amount": "99000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-7054"
+  },
+  {
+    "date": "2024-01-03",
+    "amount": "67500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-04",
+    "amount": "116000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-8351"
+  },
+  {
+    "date": "2024-01-05",
+    "amount": "20000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #1"
+  },
+  {
+    "date": "2024-01-05",
+    "amount": "93600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-06",
+    "amount": "63900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-09",
+    "amount": "145000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-1811"
+  },
+  {
+    "date": "2024-01-11",
+    "amount": "41000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-1731"
+  },
+  {
+    "date": "2024-01-11",
+    "amount": "102600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-13",
+    "amount": "71100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-16",
+    "amount": "105000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-9666"
+  },
+  {
+    "date": "2024-01-18",
+    "amount": "81900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-19",
+    "amount": "61200.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "JSW Steel Depot",
+    "narration": "RTGS DR TO JSW Steel Depot MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-20",
+    "amount": "86000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-3992"
+  },
+  {
+    "date": "2024-01-23",
+    "amount": "140000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-5423"
+  },
+  {
+    "date": "2024-01-24",
+    "amount": "43000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-6686"
+  },
+  {
+    "date": "2024-01-25",
+    "amount": "151000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-3669"
+  },
+  {
+    "date": "2024-01-25",
+    "amount": "105300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-26",
+    "amount": "179000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-3810"
+  },
+  {
+    "date": "2024-01-26",
+    "amount": "26100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-27",
+    "amount": "105300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "JSW Steel Depot",
+    "narration": "RTGS DR TO JSW Steel Depot MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-29",
+    "amount": "82800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-01-30",
+    "amount": "30600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-02",
+    "amount": "154000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-2731"
+  },
+  {
+    "date": "2024-02-03",
+    "amount": "39600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-05",
+    "amount": "20000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #2"
+  },
+  {
+    "date": "2024-02-05",
+    "amount": "85500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-07",
+    "amount": "49000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-2782"
+  },
+  {
+    "date": "2024-02-07",
+    "amount": "63000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-08",
+    "amount": "46000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-8876"
+  },
+  {
+    "date": "2024-02-14",
+    "amount": "103000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-6900"
+  },
+  {
+    "date": "2024-02-15",
+    "amount": "116000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-6190"
+  },
+  {
+    "date": "2024-02-15",
+    "amount": "77400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-16",
+    "amount": "94500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-18",
+    "amount": "169000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-2543"
+  },
+  {
+    "date": "2024-02-19",
+    "amount": "80000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-3449"
+  },
+  {
+    "date": "2024-02-20",
+    "amount": "91800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "JSW Steel Depot",
+    "narration": "RTGS DR TO JSW Steel Depot MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-22",
+    "amount": "152000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-8994"
+  },
+  {
+    "date": "2024-02-25",
+    "amount": "90000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "JSW Steel Depot",
+    "narration": "RTGS DR TO JSW Steel Depot MAT SUPPLIES"
+  },
+  {
+    "date": "2024-02-27",
+    "amount": "135000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-5847"
+  },
+  {
+    "date": "2024-02-28",
+    "amount": "169000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-1378"
+  },
+  {
+    "date": "2024-02-28",
+    "amount": "51300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-02",
+    "amount": "83700.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-03",
+    "amount": "131000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-5162"
+  },
+  {
+    "date": "2024-03-05",
+    "amount": "20000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #3"
+  },
+  {
+    "date": "2024-03-05",
+    "amount": "36000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-07",
+    "amount": "56000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-4111"
+  },
+  {
+    "date": "2024-03-08",
+    "amount": "103500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-09",
+    "amount": "72000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-3748"
+  },
+  {
+    "date": "2024-03-12",
+    "amount": "111000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-3059"
+  },
+  {
+    "date": "2024-03-13",
+    "amount": "92700.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-14",
+    "amount": "103500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-15",
+    "amount": "121000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-9561"
+  },
+  {
+    "date": "2024-03-15",
+    "amount": "68400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "JSW Steel Depot",
+    "narration": "RTGS DR TO JSW Steel Depot MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-19",
+    "amount": "79200.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-21",
+    "amount": "52000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-3110"
+  },
+  {
+    "date": "2024-03-22",
+    "amount": "32400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-23",
+    "amount": "36000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-24",
+    "amount": "37800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-03-30",
+    "amount": "83700.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-02",
+    "amount": "51000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-2166"
+  },
+  {
+    "date": "2024-04-02",
+    "amount": "28800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-05",
+    "amount": "20000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #4"
+  },
+  {
+    "date": "2024-04-06",
+    "amount": "93600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-08",
+    "amount": "78300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-09",
+    "amount": "157000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-8453"
+  },
+  {
+    "date": "2024-04-10",
+    "amount": "72000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-11",
+    "amount": "115000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-2317"
+  },
+  {
+    "date": "2024-04-11",
+    "amount": "48600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "JSW Steel Depot",
+    "narration": "RTGS DR TO JSW Steel Depot MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-12",
+    "amount": "150000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-8234"
+  },
+  {
+    "date": "2024-04-14",
+    "amount": "120000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-4264"
+  },
+  {
+    "date": "2024-04-14",
+    "amount": "26100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-16",
+    "amount": "107100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-17",
+    "amount": "94000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-5307"
+  },
+  {
+    "date": "2024-04-17",
+    "amount": "49500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-21",
+    "amount": "94000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-7365"
+  },
+  {
+    "date": "2024-04-21",
+    "amount": "77400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-22",
+    "amount": "173000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-2932"
+  },
+  {
+    "date": "2024-04-23",
+    "amount": "91800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-24",
+    "amount": "168000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-5911"
+  },
+  {
+    "date": "2024-04-25",
+    "amount": "67000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-6086"
+  },
+  {
+    "date": "2024-04-25",
+    "amount": "43200.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-04-29",
+    "amount": "126000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-2728"
+  },
+  {
+    "date": "2024-04-30",
+    "amount": "58000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-1999"
+  },
+  {
+    "date": "2024-04-30",
+    "amount": "89100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-05-02",
+    "amount": "72000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-6222"
+  },
+  {
+    "date": "2024-05-04",
+    "amount": "73000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-4202"
+  },
+  {
+    "date": "2024-05-05",
+    "amount": "20000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #5"
+  },
+  {
+    "date": "2024-05-05",
+    "amount": "171000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-7571"
+  },
+  {
+    "date": "2024-05-07",
+    "amount": "59000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-6286"
+  },
+  {
+    "date": "2024-05-07",
+    "amount": "72900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-05-10",
+    "amount": "73000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-7626"
+  },
+  {
+    "date": "2024-05-12",
+    "amount": "65000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-1229"
+  },
+  {
+    "date": "2024-05-12",
+    "amount": "62100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-05-14",
+    "amount": "54900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-05-15",
+    "amount": "161000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-6353"
+  },
+  {
+    "date": "2024-05-20",
+    "amount": "134000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-1664"
+  },
+  {
+    "date": "2024-05-20",
+    "amount": "26100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-05-21",
+    "amount": "33300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-05-22",
+    "amount": "179000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-2077"
+  },
+  {
+    "date": "2024-05-22",
+    "amount": "43200.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-05-23",
+    "amount": "55000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-9280"
+  },
+  {
+    "date": "2024-05-24",
+    "amount": "78300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-05-26",
+    "amount": "35100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "JSW Steel Depot",
+    "narration": "RTGS DR TO JSW Steel Depot MAT SUPPLIES"
+  },
+  {
+    "date": "2024-05-31",
+    "amount": "59400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-01",
+    "amount": "180000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-1639"
+  },
+  {
+    "date": "2024-06-01",
+    "amount": "52200.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-03",
+    "amount": "85000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-6599"
+  },
+  {
+    "date": "2024-06-04",
+    "amount": "63000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-05",
+    "amount": "20000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #6"
+  },
+  {
+    "date": "2024-06-05",
+    "amount": "165000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-4269"
+  },
+  {
+    "date": "2024-06-06",
+    "amount": "104000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-4186"
+  },
+  {
+    "date": "2024-06-06",
+    "amount": "44100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-08",
+    "amount": "102000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-3819"
+  },
+  {
+    "date": "2024-06-08",
+    "amount": "68400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-09",
+    "amount": "71000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-1728"
+  },
+  {
+    "date": "2024-06-13",
+    "amount": "72000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-9521"
+  },
+  {
+    "date": "2024-06-13",
+    "amount": "47700.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-18",
+    "amount": "167000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-9260"
+  },
+  {
+    "date": "2024-06-19",
+    "amount": "142000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-3007"
+  },
+  {
+    "date": "2024-06-21",
+    "amount": "23400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "JSW Steel Depot",
+    "narration": "RTGS DR TO JSW Steel Depot MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-22",
+    "amount": "90000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-23",
+    "amount": "86400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-24",
+    "amount": "90000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-7487"
+  },
+  {
+    "date": "2024-06-25",
+    "amount": "137000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-2956"
+  },
+  {
+    "date": "2024-06-25",
+    "amount": "23400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-26",
+    "amount": "82000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-3780"
+  },
+  {
+    "date": "2024-06-26",
+    "amount": "96300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-27",
+    "amount": "26100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-06-29",
+    "amount": "151000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-7078"
+  },
+  {
+    "date": "2024-07-02",
+    "amount": "75000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-3029"
+  },
+  {
+    "date": "2024-07-04",
+    "amount": "170000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-5228"
+  },
+  {
+    "date": "2024-07-05",
+    "amount": "20000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #7"
+  },
+  {
+    "date": "2024-07-05",
+    "amount": "178000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-3954"
+  },
+  {
+    "date": "2024-07-07",
+    "amount": "89000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-2151"
+  },
+  {
+    "date": "2024-07-07",
+    "amount": "22500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-09",
+    "amount": "103000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-5048"
+  },
+  {
+    "date": "2024-07-09",
+    "amount": "69300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-11",
+    "amount": "89000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-1578"
+  },
+  {
+    "date": "2024-07-16",
+    "amount": "132000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-2447"
+  },
+  {
+    "date": "2024-07-16",
+    "amount": "36000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-17",
+    "amount": "109000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-9476"
+  },
+  {
+    "date": "2024-07-17",
+    "amount": "47700.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-18",
+    "amount": "54000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-19",
+    "amount": "44000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-4016"
+  },
+  {
+    "date": "2024-07-20",
+    "amount": "166000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-9768"
+  },
+  {
+    "date": "2024-07-20",
+    "amount": "66600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-21",
+    "amount": "61000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-4012"
+  },
+  {
+    "date": "2024-07-22",
+    "amount": "27000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-23",
+    "amount": "104400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-25",
+    "amount": "27900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-27",
+    "amount": "99900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-28",
+    "amount": "76500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "JSW Steel Depot",
+    "narration": "RTGS DR TO JSW Steel Depot MAT SUPPLIES"
+  },
+  {
+    "date": "2024-07-31",
+    "amount": "42000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-3401"
+  },
+  {
+    "date": "2024-07-31",
+    "amount": "105300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-01",
+    "amount": "41000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-7397"
+  },
+  {
+    "date": "2024-08-01",
+    "amount": "90000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-04",
+    "amount": "177000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-6829"
+  },
+  {
+    "date": "2024-08-04",
+    "amount": "84600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-05",
+    "amount": "20000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #8"
+  },
+  {
+    "date": "2024-08-07",
+    "amount": "69300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-09",
+    "amount": "102600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-13",
+    "amount": "122000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-4204"
+  },
+  {
+    "date": "2024-08-14",
+    "amount": "89100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-16",
+    "amount": "107100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-17",
+    "amount": "104400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-18",
+    "amount": "159000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-9145"
+  },
+  {
+    "date": "2024-08-20",
+    "amount": "50000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-3942"
+  },
+  {
+    "date": "2024-08-23",
+    "amount": "95000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-9180"
+  },
+  {
+    "date": "2024-08-24",
+    "amount": "175000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-5041"
+  },
+  {
+    "date": "2024-08-24",
+    "amount": "33300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-25",
+    "amount": "144000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-1018"
+  },
+  {
+    "date": "2024-08-27",
+    "amount": "43200.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "JSW Steel Depot",
+    "narration": "RTGS DR TO JSW Steel Depot MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-28",
+    "amount": "101700.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-08-31",
+    "amount": "41000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-9162"
+  },
+  {
+    "date": "2024-08-31",
+    "amount": "31500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-01",
+    "amount": "163000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-8331"
+  },
+  {
+    "date": "2024-09-02",
+    "amount": "98000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-8076"
+  },
+  {
+    "date": "2024-09-02",
+    "amount": "49500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "JSW Steel Depot",
+    "narration": "RTGS DR TO JSW Steel Depot MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-04",
+    "amount": "107100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-05",
+    "amount": "20000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #9"
+  },
+  {
+    "date": "2024-09-05",
+    "amount": "93600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-06",
+    "amount": "94000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-5006"
+  },
+  {
+    "date": "2024-09-06",
+    "amount": "86400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-07",
+    "amount": "168000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-3251"
+  },
+  {
+    "date": "2024-09-10",
+    "amount": "52000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-9612"
+  },
+  {
+    "date": "2024-09-10",
+    "amount": "48600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-11",
+    "amount": "67500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "JSW Steel Depot",
+    "narration": "RTGS DR TO JSW Steel Depot MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-12",
+    "amount": "49000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-5295"
+  },
+  {
+    "date": "2024-09-13",
+    "amount": "160000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-4265"
+  },
+  {
+    "date": "2024-09-15",
+    "amount": "57600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-16",
+    "amount": "154000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-3443"
+  },
+  {
+    "date": "2024-09-17",
+    "amount": "55800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-18",
+    "amount": "71000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-6022"
+  },
+  {
+    "date": "2024-09-19",
+    "amount": "111000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-6938"
+  },
+  {
+    "date": "2024-09-20",
+    "amount": "101700.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-23",
+    "amount": "53100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-24",
+    "amount": "97000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-1551"
+  },
+  {
+    "date": "2024-09-24",
+    "amount": "61200.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-25",
+    "amount": "41000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-7870"
+  },
+  {
+    "date": "2024-09-25",
+    "amount": "36000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-09-27",
+    "amount": "143000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-2958"
+  },
+  {
+    "date": "2024-09-29",
+    "amount": "54000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-1702"
+  },
+  {
+    "date": "2024-10-04",
+    "amount": "104400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-05",
+    "amount": "20000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #10"
+  },
+  {
+    "date": "2024-10-05",
+    "amount": "131000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-7183"
+  },
+  {
+    "date": "2024-10-06",
+    "amount": "65700.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-07",
+    "amount": "67500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-10",
+    "amount": "37800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-11",
+    "amount": "84000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-5693"
+  },
+  {
+    "date": "2024-10-11",
+    "amount": "94500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-12",
+    "amount": "121000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-5330"
+  },
+  {
+    "date": "2024-10-16",
+    "amount": "126000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-5475"
+  },
+  {
+    "date": "2024-10-19",
+    "amount": "170000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-1942"
+  },
+  {
+    "date": "2024-10-20",
+    "amount": "107000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-6703"
+  },
+  {
+    "date": "2024-10-21",
+    "amount": "98100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-24",
+    "amount": "112000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bharat Forge Supply",
+    "narration": "NEFT CR-Bharat Forge Suppl-INV-2888"
+  },
+  {
+    "date": "2024-10-25",
+    "amount": "38700.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-27",
+    "amount": "45900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-28",
+    "amount": "171000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-2064"
+  },
+  {
+    "date": "2024-10-28",
+    "amount": "90900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-10-29",
+    "amount": "139000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-6679"
+  },
+  {
+    "date": "2024-10-30",
+    "amount": "49000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-2177"
+  },
+  {
+    "date": "2024-11-01",
+    "amount": "48600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "JSW Steel Depot",
+    "narration": "RTGS DR TO JSW Steel Depot MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-02",
+    "amount": "44100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-03",
+    "amount": "97000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-7147"
+  },
+  {
+    "date": "2024-11-04",
+    "amount": "123000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-2120"
+  },
+  {
+    "date": "2024-11-05",
+    "amount": "20000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #11"
+  },
+  {
+    "date": "2024-11-05",
+    "amount": "72000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-1731"
+  },
+  {
+    "date": "2024-11-06",
+    "amount": "119000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-4044"
+  },
+  {
+    "date": "2024-11-08",
+    "amount": "103500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-09",
+    "amount": "45900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-16",
+    "amount": "51300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-17",
+    "amount": "165000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-2913"
+  },
+  {
+    "date": "2024-11-18",
+    "amount": "59400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-20",
+    "amount": "125000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-7724"
+  },
+  {
+    "date": "2024-11-20",
+    "amount": "24300.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-21",
+    "amount": "128000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-3726"
+  },
+  {
+    "date": "2024-11-21",
+    "amount": "71100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-22",
+    "amount": "27000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-26",
+    "amount": "81000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-11-28",
+    "amount": "146000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-8546"
+  },
+  {
+    "date": "2024-11-28",
+    "amount": "32400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-04",
+    "amount": "137000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Bajaj Auto Vendor Corp",
+    "narration": "NEFT CR-Bajaj Auto Vendor -INV-1869"
+  },
+  {
+    "date": "2024-12-05",
+    "amount": "20000",
+    "type": "DEBIT",
+    "category": "DEBT_SERVICE",
+    "counterparty": "Lending Partner Bank",
+    "narration": "NACH DR TO LENDING PARTNER EMI #12"
+  },
+  {
+    "date": "2024-12-07",
+    "amount": "100000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Larsen Heavy Fab",
+    "narration": "NEFT CR-Larsen Heavy Fab-INV-4011"
+  },
+  {
+    "date": "2024-12-07",
+    "amount": "66600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-08",
+    "amount": "157000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-9392"
+  },
+  {
+    "date": "2024-12-09",
+    "amount": "94500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "JSW Steel Depot",
+    "narration": "RTGS DR TO JSW Steel Depot MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-12",
+    "amount": "170000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Adani Logistics Partner",
+    "narration": "NEFT CR-Adani Logistics Pa-INV-8652"
+  },
+  {
+    "date": "2024-12-12",
+    "amount": "64800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Standard Packing Material Corp",
+    "narration": "RTGS DR TO Standard Packing MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-14",
+    "amount": "49500.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-16",
+    "amount": "103000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-4662"
+  },
+  {
+    "date": "2024-12-16",
+    "amount": "81900.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "JSW Steel Depot",
+    "narration": "RTGS DR TO JSW Steel Depot MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-17",
+    "amount": "48600.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-21",
+    "amount": "82800.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-22",
+    "amount": "161000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-8169"
+  },
+  {
+    "date": "2024-12-22",
+    "amount": "50400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Tata Power Industrial",
+    "narration": "RTGS DR TO Tata Power Indus MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-24",
+    "amount": "180000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-1426"
+  },
+  {
+    "date": "2024-12-26",
+    "amount": "71000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-5226"
+  },
+  {
+    "date": "2024-12-27",
+    "amount": "98100.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Apex Industrial Gases",
+    "narration": "RTGS DR TO Apex Industrial  MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-28",
+    "amount": "107000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Reliance Retail Distribution",
+    "narration": "NEFT CR-Reliance Retail Di-INV-4858"
+  },
+  {
+    "date": "2024-12-28",
+    "amount": "36000.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "National Logistics Transport",
+    "narration": "RTGS DR TO National Logisti MAT SUPPLIES"
+  },
+  {
+    "date": "2024-12-29",
+    "amount": "164000.00",
+    "type": "CREDIT",
+    "category": "SALES_RECEIPT",
+    "counterparty": "Tata Motors Ancillary Ltd",
+    "narration": "NEFT CR-Tata Motors Ancill-INV-7501"
+  },
+  {
+    "date": "2024-12-30",
+    "amount": "104400.00",
+    "type": "DEBIT",
+    "category": "VENDOR_PAYMENT",
+    "counterparty": "Hindalco Metal Suppliers",
+    "narration": "RTGS DR TO Hindalco Metal S MAT SUPPLIES"
+  }
+]

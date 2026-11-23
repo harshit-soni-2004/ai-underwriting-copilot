@@ -1,0 +1,50 @@
+{
+  "applicant_id": "APP-072-STRESSED",
+  "business_name": "Patla, Dhingra and Gandhi Textile & Garments",
+  "legal_entity_type": "LIMITED_LIABILITY_PARTNERSHIP",
+  "archetype": "stressed",
+  "sector": "Textile & Garments",
+  "vintage_months": 72,
+  "gstin": "06BEAH4186A1Z6",
+  "pan": "BEAH4186A",
+  "seed": 2276828843,
+  "opening_balance": "80000",
+  "requested_loan_amount": "1900000",
+  "existing_monthly_emi": "110000",
+  "proposed_monthly_emi": "49400",
+  "statement_start_date": "2024-01-01",
+  "statement_end_date": "2024-12-31",
+  "expected_metrics": {
+    "average_monthly_balance": "-3911478.42",
+    "avg_monthly_operating_inflow": "375537.50",
+    "avg_monthly_operating_outflow": "971712.50",
+    "cash_flow_volatility_cv": "0.4287",
+    "volatility_status": "SUCCESS",
+    "inward_clearing_returns_count": 3,
+    "outward_cheque_returns_count": 4,
+    "total_inward_clearing_attempts": 15,
+    "bounce_rate": "0.2000",
+    "dscr_proxy": "-3.7401",
+    "dscr_status": "SUCCESS",
+    "is_negative_surplus": true,
+    "foir": "0.4245",
+    "foir_status": "SUCCESS",
+    "counterparty_top1_share": "0.2091",
+    "counterparty_top3_share": "0.6080",
+    "counterparty_hhi": "1751.95",
+    "gst_turnover_ratio": "1.0258",
+    "excluded_inflows_breakdown": {},
+    "expected_decision": "DECLINE",
+    "policy_clauses_triggered": [
+      "FIN-01",
+      "FIN-02",
+      "FIN-03"
+    ]
+  },
+  "expected_decision": "DECLINE",
+  "policy_clauses_triggered": [
+    "FIN-01",
+    "FIN-02",
+    "FIN-03"
+  ]
+}
