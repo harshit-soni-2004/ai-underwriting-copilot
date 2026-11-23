@@ -43,7 +43,7 @@ endobj
 endobj
 8 0 obj
 <<
-/Length 1972
+/Length 1973
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -51,13 +51,13 @@ BT /F2 14 Tf 16.8 TL ET
 BT 1 0 0 1 40 750 Tm (TAX INVOICE) Tj T* ET
 BT /F1 8 Tf 9.6 TL ET
 BT 1 0 0 1 40 735 Tm (Invoice No: INV-2024-004) Tj T* ET
-BT 1 0 0 1 40 722 Tm (Invoice Date: 2024-01-08) Tj T* ET
+BT 1 0 0 1 40 722 Tm (Invoice Date: 2024-01-17) Tj T* ET
 n 40 640 250 75 re S
 BT /F2 8 Tf 9.6 TL ET
 BT 1 0 0 1 45 702 Tm (SUPPLIER / SELLER:) Tj T* ET
 BT /F1 8 Tf 9.6 TL ET
 BT 1 0 0 1 45 688 Tm (Bera-Gill Packaging Solutions) Tj T* ET
-BT 1 0 0 1 45 674 Tm (GSTIN: 33ACCH4920D1Z3) Tj T* ET
+BT 1 0 0 1 45 674 Tm (GSTIN: 27ACAFD3734E1ZQ) Tj T* ET
 BT 1 0 0 1 45 660 Tm (State: Maharashtra \(Code: 27\)) Tj T* ET
 n 310 640 250 75 re S
 BT /F2 8 Tf 9.6 TL ET
@@ -78,16 +78,16 @@ BT /F1 8 Tf 9.6 TL ET
 BT 1 0 0 1 45 590 Tm (Industrial Supplies #4) Tj T* ET
 BT 1 0 0 1 240 590 Tm (8481) Tj T* ET
 BT 1 0 0 1 300 590 Tm (5) Tj T* ET
-BT 1 0 0 1 384.416 590 Tm (26,440.68) Tj T* ET
-BT 1 0 0 1 509.968 590 Tm (132,203.39) Tj T* ET
+BT 1 0 0 1 384.416 590 Tm (29,491.53) Tj T* ET
+BT 1 0 0 1 509.968 590 Tm (147,457.63) Tj T* ET
 n 40 574 m 560 574 l S
 BT /F2 8 Tf 9.6 TL ET
 BT 1 0 0 1 340 556 Tm (Taxable Amount:) Tj T* ET
-BT 1 0 0 1 493.968 556 Tm (INR 132,203.39) Tj T* ET
+BT 1 0 0 1 493.968 556 Tm (INR 147,457.63) Tj T* ET
 BT 1 0 0 1 340 542 Tm (GST @ 18%:) Tj T* ET
-BT 1 0 0 1 498.416 542 Tm (INR 23,796.61) Tj T* ET
+BT 1 0 0 1 498.416 542 Tm (INR 26,542.37) Tj T* ET
 BT 1 0 0 1 340 528 Tm (Total Invoice Amount:) Tj T* ET
-BT 1 0 0 1 493.968 528 Tm (INR 156,000.00) Tj T* ET
+BT 1 0 0 1 493.968 528 Tm (INR 174,000.00) Tj T* ET
 BT /F1 7 Tf 8.4 TL ET
 BT 1 0 0 1 40 100 Tm (Terms & Conditions: Payment due within 30 days of invoice presentation.) Tj T* ET
 BT 1 0 0 1 40 88 Tm (Authorized Signatory: Computer generated invoice, physical signature not required.) Tj T* ET
@@ -116,5 +116,5 @@ trailer
 /Size 9
 >>
 startxref
-2925
+2926
 %%EOF

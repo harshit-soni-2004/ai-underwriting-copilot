@@ -43,7 +43,7 @@ endobj
 endobj
 8 0 obj
 <<
-/Length 1972
+/Length 1973
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -51,19 +51,19 @@ BT /F2 14 Tf 16.8 TL ET
 BT 1 0 0 1 40 750 Tm (TAX INVOICE) Tj T* ET
 BT /F1 8 Tf 9.6 TL ET
 BT 1 0 0 1 40 735 Tm (Invoice No: INV-2024-005) Tj T* ET
-BT 1 0 0 1 40 722 Tm (Invoice Date: 2024-01-30) Tj T* ET
+BT 1 0 0 1 40 722 Tm (Invoice Date: 2024-02-07) Tj T* ET
 n 40 640 250 75 re S
 BT /F2 8 Tf 9.6 TL ET
 BT 1 0 0 1 45 702 Tm (SUPPLIER / SELLER:) Tj T* ET
 BT /F1 8 Tf 9.6 TL ET
-BT 1 0 0 1 45 688 Tm (Nigam, Vora and Dara Pharma Formula) Tj T* ET
-BT 1 0 0 1 45 674 Tm (GSTIN: 24DBDC5154D1Z2) Tj T* ET
+BT 1 0 0 1 45 688 Tm (Nigam, Vora and Dara Precision Engi) Tj T* ET
+BT 1 0 0 1 45 674 Tm (GSTIN: 06ECAPA1501B1ZT) Tj T* ET
 BT 1 0 0 1 45 660 Tm (State: Maharashtra \(Code: 27\)) Tj T* ET
 n 310 640 250 75 re S
 BT /F2 8 Tf 9.6 TL ET
 BT 1 0 0 1 315 702 Tm (BILL TO / BUYER:) Tj T* ET
 BT /F1 8 Tf 9.6 TL ET
-BT 1 0 0 1 315 688 Tm (Mahindra Supplier Hub) Tj T* ET
+BT 1 0 0 1 315 688 Tm (Godrej Consumer Vendor) Tj T* ET
 BT 1 0 0 1 315 674 Tm (GSTIN: 27AABCU1004F1Z5) Tj T* ET
 BT 1 0 0 1 315 660 Tm (Place of Supply: Inter-State / Intra-State) Tj T* ET
 n 40 625 m 560 625 l S
@@ -78,16 +78,16 @@ BT /F1 8 Tf 9.6 TL ET
 BT 1 0 0 1 45 590 Tm (Industrial Supplies #5) Tj T* ET
 BT 1 0 0 1 240 590 Tm (8481) Tj T* ET
 BT 1 0 0 1 300 590 Tm (5) Tj T* ET
-BT 1 0 0 1 384.416 590 Tm (10,025.42) Tj T* ET
-BT 1 0 0 1 514.416 590 Tm (50,127.12) Tj T* ET
+BT 1 0 0 1 388.864 590 Tm (3,144.07) Tj T* ET
+BT 1 0 0 1 514.416 590 Tm (15,720.34) Tj T* ET
 n 40 574 m 560 574 l S
 BT /F2 8 Tf 9.6 TL ET
 BT 1 0 0 1 340 556 Tm (Taxable Amount:) Tj T* ET
-BT 1 0 0 1 498.416 556 Tm (INR 50,127.12) Tj T* ET
+BT 1 0 0 1 498.416 556 Tm (INR 15,720.34) Tj T* ET
 BT 1 0 0 1 340 542 Tm (GST @ 18%:) Tj T* ET
-BT 1 0 0 1 502.864 542 Tm (INR 9,022.88) Tj T* ET
+BT 1 0 0 1 502.864 542 Tm (INR 2,829.66) Tj T* ET
 BT 1 0 0 1 340 528 Tm (Total Invoice Amount:) Tj T* ET
-BT 1 0 0 1 498.416 528 Tm (INR 59,150.00) Tj T* ET
+BT 1 0 0 1 498.416 528 Tm (INR 18,550.00) Tj T* ET
 BT /F1 7 Tf 8.4 TL ET
 BT 1 0 0 1 40 100 Tm (Terms & Conditions: Payment due within 30 days of invoice presentation.) Tj T* ET
 BT 1 0 0 1 40 88 Tm (Authorized Signatory: Computer generated invoice, physical signature not required.) Tj T* ET
@@ -116,5 +116,5 @@ trailer
 /Size 9
 >>
 startxref
-2925
+2926
 %%EOF

@@ -58,11 +58,16 @@ def generate_applicant_dataset(
         gstr3b_annual_taxable_supplies=gstr3b_annual
     )
 
-    # 3. Clean transactions.json (Input for Java golden test)
+    # 3. Policy Evaluation (Derived solely from metrics and profile, not archetype name)
+    expected_decision, policy_clauses_triggered = ReferenceMetricsOracle.evaluate_policy(
+        expected_metrics, profile
+    )
+
+    # 4. Clean transactions.json (Input for Java golden test)
     with open(app_dir / "transactions.json", "w", encoding="utf-8") as f:
         json.dump(txns, f, indent=2)
 
-    # 4. Bank Statements (HDFC CSV + PDF, SBI CSV + PDF, ICICI CSV)
+    # 5. Bank Statements (HDFC CSV + PDF, SBI CSV + PDF, ICICI CSV)
     stmts_dir = app_dir / "bank_statements"
     stmts_dir.mkdir(parents=True, exist_ok=True)
 
@@ -74,7 +79,7 @@ def generate_applicant_dataset(
 
     BankStatementGenerator.generate_icici_csv(txns, open_bal, stmts_dir / "statement_icici.csv")
 
-    # 5. Invoices (10-15 sample PDFs)
+    # 6. Invoices
     inv_dir = app_dir / "invoices"
     inv_dir.mkdir(parents=True, exist_ok=True)
     sales_txns = [t for t in txns if t["type"] == "CREDIT" and t["category"] == "SALES_RECEIPT"]
@@ -96,7 +101,7 @@ def generate_applicant_dataset(
             out_path=inv_dir / f"{inv_no}.pdf"
         )
 
-    # 6. GSTR-3B filings
+    # 7. GSTR-3B filings
     gst_dir = app_dir / "gst_returns"
     gst_dir.mkdir(parents=True, exist_ok=True)
     GstReturnGenerator.generate_gstr3b_returns(
@@ -109,7 +114,7 @@ def generate_applicant_dataset(
         out_csv_path=gst_dir / "gstr3b_filings.csv"
     )
 
-    # 7. Ground Truth JSON
+    # 8. Ground Truth JSON (with decision and policy clauses at the top level only)
     ground_truth = {
         "applicant_id": applicant_id,
         "business_name": profile["business_name"],
@@ -121,14 +126,16 @@ def generate_applicant_dataset(
         "pan": profile["pan"],
         "seed": profile["seed"],
         "opening_balance": profile["opening_balance"],
+        "od_limit": profile.get("od_limit", "0.00"),
         "requested_loan_amount": profile["requested_loan_amount"],
         "existing_monthly_emi": profile["existing_monthly_emi"],
         "proposed_monthly_emi": profile["proposed_monthly_emi"],
         "statement_start_date": profile["statement_start_date"],
         "statement_end_date": profile["statement_end_date"],
-        "expected_metrics": expected_metrics,
-        "expected_decision": expected_metrics["expected_decision"],
-        "policy_clauses_triggered": expected_metrics["policy_clauses_triggered"]
+        "near_threshold": profile.get("near_threshold", False),
+        "expected_decision": expected_decision,
+        "policy_clauses_triggered": policy_clauses_triggered,
+        "expected_metrics": expected_metrics
     }
 
     with open(app_dir / "ground_truth.json", "w", encoding="utf-8") as f:
@@ -147,9 +154,14 @@ def main():
     out_path = Path(args.output_dir)
     fixtures_path = Path(args.fixtures_dir)
 
-    print(f"Starting generation of {args.applicants} synthetic applicants (Seed: {args.seed})...")
+    print(f"Starting fresh generation of {args.applicants} synthetic applicants (Seed: {args.seed})...")
 
-    # Generate applicants
+    # Clean previous output directory to ensure zero stale folders
+    app_base_dir = out_path / "applicants"
+    if app_base_dir.exists():
+        shutil.rmtree(app_base_dir)
+    app_base_dir.mkdir(parents=True, exist_ok=True)
+
     counter = 1
     generated_profiles = []
     fixtures_selected = []
@@ -158,7 +170,7 @@ def main():
         for idx in range(count):
             if counter > args.applicants:
                 break
-            # Special labeling for near-threshold edge cases
+            # Specific applicant IDs for controlled edge cases and near-threshold validation
             if archetype == "edge_cases":
                 if idx == 0:
                     app_id = f"APP-{counter:03d}-EDGE-ZERO-INFLOW"
@@ -168,19 +180,24 @@ def main():
                     app_id = f"APP-{counter:03d}-EDGE-ROUND-TRIP"
                 elif idx == 3:
                     app_id = f"APP-{counter:03d}-EDGE-DOC02-GST-DISCREPANT"
-                elif idx in [4, 5, 6]:
+                elif idx in [4, 5]:
                     app_id = f"APP-{counter:03d}-EDGE-NEAR-DSCR-MIN"
-                elif idx in [7, 8, 9]:
+                elif idx in [6, 7]:
                     app_id = f"APP-{counter:03d}-EDGE-NEAR-DSCR-REC"
+                elif idx in [8, 9]:
+                    app_id = f"APP-{counter:03d}-EDGE-NEAR-FOIR"
+                elif idx in [10, 11]:
+                    app_id = f"APP-{counter:03d}-EDGE-NEAR-TOP1"
+                elif idx in [12, 13]:
+                    app_id = f"APP-{counter:03d}-EDGE-NEAR-VOLATILITY"
                 else:
-                    app_id = f"APP-{counter:03d}-EDGE-{idx+1}"
+                    app_id = f"APP-{counter:03d}-EDGE-NEAR-AMB"
             else:
                 app_id = f"APP-{counter:03d}-{archetype.upper()}"
 
             gt = generate_applicant_dataset(app_id, archetype, args.seed, out_path)
             generated_profiles.append(gt)
 
-            # Select 2 per archetype for committed fixtures
             if idx < 2:
                 fixtures_selected.append((app_id, archetype))
 
@@ -188,6 +205,9 @@ def main():
 
     # Generate 20 Adversarial Documents
     adv_dir = out_path / "adversarial"
+    if adv_dir.exists():
+        shutil.rmtree(adv_dir)
+    adv_dir.mkdir(parents=True, exist_ok=True)
     print("Generating 20 adversarial injection document variants...")
     for v_idx in range(20):
         base_app = generated_profiles[v_idx % len(generated_profiles)]
@@ -195,18 +215,15 @@ def main():
 
     # Populate data/fixtures/ with the selected 12 applicants
     print(f"Copying {len(fixtures_selected)} canonical fixtures into {fixtures_path}...")
+    if fixtures_path.exists():
+        shutil.rmtree(fixtures_path)
     fixtures_path.mkdir(parents=True, exist_ok=True)
     for app_id, arch in fixtures_selected:
         src = out_path / "applicants" / app_id
         dst = fixtures_path / "applicants" / app_id
-        if dst.exists():
-            shutil.rmtree(dst)
         shutil.copytree(src, dst)
 
-    # Also copy 4 sample adversarial fixtures
     dst_adv = fixtures_path / "adversarial"
-    if dst_adv.exists():
-        shutil.rmtree(dst_adv)
     dst_adv.mkdir(parents=True, exist_ok=True)
     for adv_f in list(adv_dir.glob("*"))[:4]:
         shutil.copy(adv_f, dst_adv / adv_f.name)

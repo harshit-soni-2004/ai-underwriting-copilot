@@ -43,7 +43,7 @@ endobj
 endobj
 8 0 obj
 <<
-/Length 1973
+/Length 1974
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -51,13 +51,13 @@ BT /F2 14 Tf 16.8 TL ET
 BT 1 0 0 1 40 750 Tm (TAX INVOICE) Tj T* ET
 BT /F1 8 Tf 9.6 TL ET
 BT 1 0 0 1 40 735 Tm (Invoice No: INV-2024-012) Tj T* ET
-BT 1 0 0 1 40 722 Tm (Invoice Date: 2024-02-07) Tj T* ET
+BT 1 0 0 1 40 722 Tm (Invoice Date: 2024-02-08) Tj T* ET
 n 40 640 250 75 re S
 BT /F2 8 Tf 9.6 TL ET
 BT 1 0 0 1 45 702 Tm (SUPPLIER / SELLER:) Tj T* ET
 BT /F1 8 Tf 9.6 TL ET
-BT 1 0 0 1 45 688 Tm (Hans-Ramanathan Packaging Solutions) Tj T* ET
-BT 1 0 0 1 45 674 Tm (GSTIN: 07EDBC3867A1Z4) Tj T* ET
+BT 1 0 0 1 45 688 Tm (Hans-Ramanathan Precision Engineeri) Tj T* ET
+BT 1 0 0 1 45 674 Tm (GSTIN: 29DBAFA9975D1Z3) Tj T* ET
 BT 1 0 0 1 45 660 Tm (State: Maharashtra \(Code: 27\)) Tj T* ET
 n 310 640 250 75 re S
 BT /F2 8 Tf 9.6 TL ET
@@ -116,5 +116,5 @@ trailer
 /Size 9
 >>
 startxref
-2926
+2927
 %%EOF

@@ -1,0 +1,51 @@
+# Machine-readable mirror of sample_internal_credit_policy.md (POL-MSME-2025-V1)
+policy_code: "POL-MSME-2025-V1"
+max_loan_amount: "5000000.00"
+
+eligibility:
+  ELIG-01:
+    description: "Entity Vintage in months"
+    min_vintage_months: 24
+    referral_min_months: 6
+    decline_below_months: 6
+  ELIG-02:
+    description: "Minimum Annualized Turnover in INR"
+    min_turnover_annual: "2500000.00"
+  ELIG-03:
+    eligible_entity_types:
+      - "PROPRIETORSHIP"
+      - "LIMITED_LIABILITY_PARTNERSHIP"
+      - "PRIVATE_LIMITED"
+
+financial_thresholds:
+  FIN-01:
+    description: "DSCR Proxy"
+    approve_min: "1.2500"
+    referral_min: "1.1000"
+    decline_below: "1.0000"
+  FIN-02:
+    description: "AMB vs proposed EMI ratio"
+    min_amb_to_proposed_emi_ratio: "0.1000"
+  FIN-03:
+    description: "Inward Clearing Returns (Cheque/NACH/ECS)"
+    max_12m_returns_referral: 2
+    decline_if_greater_than: 3
+  FIN-04:
+    description: "Fixed Obligation to Income Ratio (FOIR)"
+    max_foir: "0.5000"
+  FIN-05:
+    description: "Counterparty Concentration (Top-1 Share)"
+    max_top1_share: "0.4000"
+  FIN-06:
+    description: "Cash Flow Volatility (CV of operating inflow)"
+    max_cv: "0.6000"
+
+verification:
+  DOC-01:
+    min_field_confidence: "0.8500"
+  DOC-02:
+    max_gst_turnover_discrepancy_pct: "0.2000"
+
+authority:
+  AUTH-01:
+    auto_approve_min_dscr: "1.5000"

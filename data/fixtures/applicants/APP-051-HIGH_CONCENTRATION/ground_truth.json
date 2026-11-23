@@ -1,46 +1,44 @@
 {
   "applicant_id": "APP-051-HIGH_CONCENTRATION",
-  "business_name": "Garg-Khalsa IT Hardware & Solutions",
-  "legal_entity_type": "PRIVATE_LIMITED",
+  "business_name": "Garg-Khalsa Food Processing",
+  "legal_entity_type": "LIMITED_LIABILITY_PARTNERSHIP",
   "archetype": "high_concentration",
-  "sector": "IT Hardware & Solutions",
-  "vintage_months": 42,
-  "gstin": "33EBAC5353C1Z5",
-  "pan": "EBAC5353C",
+  "sector": "Food Processing",
+  "vintage_months": 51,
+  "gstin": "29BAAFD2889E1ZB",
+  "pan": "BAAFD2889E",
   "seed": 2068618978,
-  "opening_balance": "210000",
-  "requested_loan_amount": "1700000",
-  "existing_monthly_emi": "50000",
-  "proposed_monthly_emi": "40800",
+  "opening_balance": "260000",
+  "od_limit": "0.00",
+  "requested_loan_amount": "2300000",
+  "existing_monthly_emi": "40000",
+  "proposed_monthly_emi": "55200",
   "statement_start_date": "2024-01-01",
   "statement_end_date": "2024-12-31",
+  "near_threshold": false,
+  "expected_decision": "REFER",
+  "policy_clauses_triggered": [
+    "FIN-05"
+  ],
   "expected_metrics": {
-    "average_monthly_balance": "1818407.38",
-    "avg_monthly_operating_inflow": "927083.33",
-    "avg_monthly_operating_outflow": "666825.00",
-    "cash_flow_volatility_cv": "0.2194",
+    "average_monthly_balance": "2488559.02",
+    "avg_monthly_operating_inflow": "944583.33",
+    "avg_monthly_operating_outflow": "566666.67",
+    "cash_flow_volatility_cv": "0.2289",
     "volatility_status": "SUCCESS",
     "inward_clearing_returns_count": 0,
     "outward_cheque_returns_count": 0,
     "total_inward_clearing_attempts": 12,
     "bounce_rate": "0.0000",
-    "dscr_proxy": "2.8663",
+    "dscr_proxy": "3.9697",
     "dscr_status": "SUCCESS",
     "is_negative_surplus": false,
-    "foir": "0.0979",
+    "foir": "0.1008",
     "foir_status": "SUCCESS",
-    "counterparty_top1_share": "0.6221",
-    "counterparty_top3_share": "0.8021",
-    "counterparty_hhi": "4145.43",
+    "counterparty_top1_share": "0.6464",
+    "counterparty_top3_share": "0.7882",
+    "counterparty_hhi": "4393.39",
     "gst_turnover_ratio": "0.9899",
-    "excluded_inflows_breakdown": {},
-    "expected_decision": "REFER",
-    "policy_clauses_triggered": [
-      "FIN-05"
-    ]
-  },
-  "expected_decision": "REFER",
-  "policy_clauses_triggered": [
-    "FIN-05"
-  ]
+    "excluded_inflows_breakdown": {}
+  }
 }
