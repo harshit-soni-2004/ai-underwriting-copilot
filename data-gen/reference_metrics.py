@@ -45,6 +45,7 @@ class ReferenceMetricsOracle:
     def evaluate_policy(cls, metrics: Dict[str, Any], applicant_profile: Dict[str, Any]) -> Tuple[str, List[str]]:
         """
         Pure policy decision function reading clauses from POL-MSME-2025-V1.
+        Decision precedence: DECLINE > REFER > APPROVE.
         The archetype name is NEVER passed or used here.
         """
         triggered = []
@@ -81,12 +82,12 @@ class ReferenceMetricsOracle:
         if amb < req_amb:
             triggered.append("FIN-02")
 
-        # FIN-03: Inward returns <= 2 (referral if > 2, decline if > 3)
+        # FIN-03: Inward returns: <= 2 ok, 1-2 referral (or if any in 12m), > 3 decline
         inward_returns = metrics.get("inward_clearing_returns_count", 0)
         if inward_returns > 3:
             triggered.append("FIN-03")
             is_decline = True
-        elif inward_returns > 2:
+        elif inward_returns > 0:
             triggered.append("FIN-03")
 
         # FIN-04: FOIR <= 0.50 (50%)
@@ -108,6 +109,13 @@ class ReferenceMetricsOracle:
             if cv > Decimal("0.6000"):
                 triggered.append("FIN-06")
 
+        # FIN-07: Round-Trip Ratio <= 2.0% (0.0200)
+        rt_str = metrics.get("round_trip_ratio")
+        if rt_str is not None:
+            rt_ratio = Decimal(rt_str)
+            if rt_ratio > Decimal("0.0200"):
+                triggered.append("FIN-07")
+
         # DOC-02: GST vs Bank Discrepancy > 20%
         gst_ratio_str = metrics.get("gst_turnover_ratio")
         if gst_ratio_str is not None:
@@ -115,7 +123,7 @@ class ReferenceMetricsOracle:
             if abs(gst_ratio - Decimal("1.0000")) > Decimal("0.2000"):
                 triggered.append("DOC-02")
 
-        # Final decision determination
+        # Final decision determination with strict precedence: DECLINE > REFER > APPROVE
         unique_triggered = sorted(list(set(triggered)))
         if is_decline:
             return "DECLINE", unique_triggered
@@ -145,20 +153,23 @@ class ReferenceMetricsOracle:
             t_date = datetime.strptime(t["date"], "%Y-%m-%d").date()
             parsed_txns.append({
                 "date": t_date,
+                "sequence_number": t.get("sequence_number", 1),
                 "amount": Decimal(str(t["amount"])),
                 "type": t["type"],
                 "category": t.get("category", "OTHER"),
                 "counterparty": t.get("counterparty", "UNKNOWN"),
                 "narration": t.get("narration", "")
             })
-        parsed_txns.sort(key=lambda x: x["date"])
+        parsed_txns.sort(key=lambda x: (x["date"], x["sequence_number"]))
 
         # 1. Round-Trip Inflow Filtering
         excluded_inflows_by_reason: Dict[str, Decimal] = defaultdict(Decimal)
         round_trip_indices = set()
+        gross_total_credits = Decimal("0.00")
 
         for i, t_cr in enumerate(parsed_txns):
             if t_cr["type"] == "CREDIT":
+                gross_total_credits += t_cr["amount"]
                 c_party = t_cr["counterparty"].strip().upper()
                 if c_party and c_party != "UNKNOWN":
                     cr_amt = t_cr["amount"]
@@ -221,10 +232,9 @@ class ReferenceMetricsOracle:
                 elif cat == "OUTWARD_CHEQUE_RETURN" or ("DEP RET" in narr or "OUTWARD RET" in narr):
                     outward_cheque_returns_count += 1
 
-                if cat not in ["DEBT_SERVICE", "INWARD_CHEQUE_RETURN", "INWARD_NACH_RETURN", "INWARD_ECS_RETURN"]:
+                if cat not in ["DEBT_SERVICE", "INWARD_CHEQUE_RETURN", "INWARD_NACH_RETURN", "INWARD_ECS_RETURN", "OWN_ACCOUNT_TRANSFER", "DIVIDEND", "INVESTMENT"]:
                     monthly_operating_outflows[month_key] += t["amount"]
 
-        # Ensure all calendar months in evaluation period are explicitly represented
         curr = statement_start_date.replace(day=1)
         all_month_keys = []
         while curr <= statement_end_date:
@@ -324,7 +334,14 @@ class ReferenceMetricsOracle:
             top3_share = Decimal("0.0000")
             hhi = Decimal("0.00")
 
-        # 9. GST vs Bank Turnover Discrepancy Ratio
+        # 9. Round-Trip Ratio
+        rt_excluded = excluded_inflows_by_reason.get("ROUND_TRIP", Decimal("0.00"))
+        if gross_total_credits > Decimal("0"):
+            round_trip_ratio = rt_excluded / gross_total_credits
+        else:
+            round_trip_ratio = Decimal("0.0000")
+
+        # 10. GST vs Bank Turnover Discrepancy Ratio
         if gstr3b_annual_taxable_supplies is not None and total_operating_inflows > Decimal("0"):
             gst_turnover_ratio = gstr3b_annual_taxable_supplies / total_operating_inflows
         else:
@@ -348,6 +365,7 @@ class ReferenceMetricsOracle:
             "counterparty_top1_share": str(quantize_ratio(top1_share)),
             "counterparty_top3_share": str(quantize_ratio(top3_share)),
             "counterparty_hhi": str(quantize_index(hhi)),
+            "round_trip_ratio": str(quantize_ratio(round_trip_ratio)),
             "gst_turnover_ratio": str(quantize_ratio(gst_turnover_ratio)) if gst_turnover_ratio is not None else None,
             "excluded_inflows_breakdown": {
                 k: str(quantize_money(v)) for k, v in excluded_inflows_by_reason.items()

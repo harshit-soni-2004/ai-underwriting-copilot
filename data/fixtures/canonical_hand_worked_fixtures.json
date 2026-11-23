@@ -1,0 +1,152 @@
+[
+  {
+    "fixture_id": "FIX-01-CLEAN-GROWTH",
+    "description": "3 Months clean growth with healthy metrics",
+    "opening_balance": "100000.00",
+    "od_limit": "0.00",
+    "statement_start_date": "2024-01-01",
+    "statement_end_date": "2024-03-31",
+    "existing_monthly_emi": "10000.00",
+    "proposed_monthly_emi": "5000.00",
+    "gstr3b_annual_taxable_supplies": "180000.00",
+    "transactions": [
+      {"date": "2024-01-10", "sequence_number": 1, "amount": "50000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Alpha Corp", "narration": "NEFT CR"},
+      {"date": "2024-01-20", "sequence_number": 1, "amount": "30000.00", "type": "DEBIT", "category": "VENDOR_PAYMENT", "counterparty": "Vendor X", "narration": "NEFT DR"},
+      {"date": "2024-02-05", "sequence_number": 1, "amount": "60000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Beta Ltd", "narration": "RTGS CR"},
+      {"date": "2024-02-15", "sequence_number": 1, "amount": "25000.00", "type": "DEBIT", "category": "VENDOR_PAYMENT", "counterparty": "Vendor Y", "narration": "NEFT DR"},
+      {"date": "2024-03-10", "sequence_number": 1, "amount": "70000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Alpha Corp", "narration": "NEFT CR"},
+      {"date": "2024-03-20", "sequence_number": 1, "amount": "35000.00", "type": "DEBIT", "category": "OPERATING_EXPENSE", "counterparty": "Utilities", "narration": "BILLPAY"}
+    ],
+    "expected_metrics": {
+      "average_monthly_balance": "157912.09",
+      "avg_monthly_operating_inflow": "60000.00",
+      "avg_monthly_operating_outflow": "30000.00",
+      "cash_flow_volatility_cv": "0.1361",
+      "inward_clearing_returns_count": 0,
+      "outward_cheque_returns_count": 0,
+      "total_inward_clearing_attempts": 0,
+      "bounce_rate": "0.0000",
+      "dscr_proxy": "2.0000",
+      "foir": "0.2500",
+      "counterparty_top1_share": "0.6667",
+      "counterparty_top3_share": "1.0000",
+      "counterparty_hhi": "5555.56",
+      "gst_turnover_ratio": "1.0000"
+    }
+  },
+  {
+    "fixture_id": "FIX-02-STRESSED-BOUNCES",
+    "description": "3 Months stressed with inward returns",
+    "opening_balance": "25000.00",
+    "od_limit": "50000.00",
+    "statement_start_date": "2024-04-01",
+    "statement_end_date": "2024-06-30",
+    "existing_monthly_emi": "25000.00",
+    "proposed_monthly_emi": "10000.00",
+    "transactions": [
+      {"date": "2024-04-10", "sequence_number": 1, "amount": "30000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Buyer A", "narration": "NEFT CR"},
+      {"date": "2024-04-15", "sequence_number": 1, "amount": "40000.00", "type": "DEBIT", "category": "DEBT_SERVICE", "counterparty": "Bank", "narration": "EMI DEBIT"},
+      {"date": "2024-05-02", "sequence_number": 1, "amount": "20000.00", "type": "DEBIT", "category": "INWARD_CHEQUE_RETURN", "counterparty": "Third Party", "narration": "CHQ RET INSUFFICIENT FUNDS"},
+      {"date": "2024-05-10", "sequence_number": 1, "amount": "25000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Buyer A", "narration": "NEFT CR"},
+      {"date": "2024-05-20", "sequence_number": 1, "amount": "35000.00", "type": "DEBIT", "category": "VENDOR_PAYMENT", "counterparty": "Vendor Z", "narration": "CHQ DEBIT VENDOR"},
+      {"date": "2024-06-05", "sequence_number": 1, "amount": "20000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Buyer A", "narration": "NEFT CR"},
+      {"date": "2024-06-15", "sequence_number": 1, "amount": "22000.00", "type": "DEBIT", "category": "INWARD_NACH_RETURN", "counterparty": "Fintech", "narration": "NACH RET - BALANCE INSUFFICIENT"}
+    ],
+    "expected_metrics": {
+      "avg_monthly_operating_inflow": "25000.00",
+      "avg_monthly_operating_outflow": "11666.67",
+      "inward_clearing_returns_count": 2,
+      "outward_cheque_returns_count": 0,
+      "total_inward_clearing_attempts": 4,
+      "bounce_rate": "0.5000",
+      "dscr_proxy": "0.3810",
+      "foir": "1.4000"
+    }
+  },
+  {
+    "fixture_id": "FIX-03-ROUND-TRIP-EXCLUSION",
+    "description": "3 Months with round-trip and loan disbursal exclusion",
+    "opening_balance": "50000.00",
+    "od_limit": "0.00",
+    "statement_start_date": "2024-01-01",
+    "statement_end_date": "2024-03-31",
+    "existing_monthly_emi": "15000.00",
+    "proposed_monthly_emi": "10000.00",
+    "transactions": [
+      {"date": "2024-01-05", "sequence_number": 1, "amount": "100000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client Regular", "narration": "NEFT CR"},
+      {"date": "2024-01-15", "sequence_number": 1, "amount": "200000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Entity Circle", "narration": "RTGS CR"},
+      {"date": "2024-01-17", "sequence_number": 1, "amount": "198000.00", "type": "DEBIT", "category": "VENDOR_PAYMENT", "counterparty": "Entity Circle", "narration": "RTGS DR"},
+      {"date": "2024-02-10", "sequence_number": 1, "amount": "500000.00", "type": "CREDIT", "category": "LOAN_DISBURSAL", "counterparty": "NBFC Lender", "narration": "LOAN DISBURSAL"},
+      {"date": "2024-02-20", "sequence_number": 1, "amount": "120000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client Regular", "narration": "NEFT CR"},
+      {"date": "2024-03-10", "sequence_number": 1, "amount": "110000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client Regular", "narration": "NEFT CR"}
+    ],
+    "expected_metrics": {
+      "avg_monthly_operating_inflow": "110000.00",
+      "excluded_inflows_breakdown": {
+        "ROUND_TRIP": "200000.00",
+        "LOAN_DISBURSAL": "500000.00"
+      }
+    }
+  },
+  {
+    "fixture_id": "FIX-04-NEGATIVE-SURPLUS",
+    "description": "3 Months deficit cash flow resulting in negative surplus",
+    "opening_balance": "100000.00",
+    "od_limit": "0.00",
+    "statement_start_date": "2024-01-01",
+    "statement_end_date": "2024-03-31",
+    "existing_monthly_emi": "15000.00",
+    "proposed_monthly_emi": "5000.00",
+    "transactions": [
+      {"date": "2024-01-15", "sequence_number": 1, "amount": "40000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client A", "narration": "NEFT CR"},
+      {"date": "2024-01-20", "sequence_number": 1, "amount": "60000.00", "type": "DEBIT", "category": "VENDOR_PAYMENT", "counterparty": "Vendor A", "narration": "RTGS DR"},
+      {"date": "2024-02-15", "sequence_number": 1, "amount": "35000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client A", "narration": "NEFT CR"},
+      {"date": "2024-02-20", "sequence_number": 1, "amount": "55000.00", "type": "DEBIT", "category": "VENDOR_PAYMENT", "counterparty": "Vendor A", "narration": "RTGS DR"},
+      {"date": "2024-03-15", "sequence_number": 1, "amount": "45000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client A", "narration": "NEFT CR"},
+      {"date": "2024-03-20", "sequence_number": 1, "amount": "65000.00", "type": "DEBIT", "category": "VENDOR_PAYMENT", "counterparty": "Vendor A", "narration": "RTGS DR"}
+    ],
+    "expected_metrics": {
+      "avg_monthly_operating_inflow": "40000.00",
+      "avg_monthly_operating_outflow": "60000.00",
+      "is_negative_surplus": true,
+      "dscr_proxy": "-1.0000",
+      "foir": "0.5000"
+    }
+  },
+  {
+    "fixture_id": "FIX-05-PARTIAL-MONTH-START",
+    "description": "Statement starting mid-month (Jan 16 to Mar 31)",
+    "opening_balance": "80000.00",
+    "od_limit": "0.00",
+    "statement_start_date": "2024-01-16",
+    "statement_end_date": "2024-03-31",
+    "existing_monthly_emi": "10000.00",
+    "proposed_monthly_emi": "5000.00",
+    "transactions": [
+      {"date": "2024-01-20", "sequence_number": 1, "amount": "40000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client 1", "narration": "NEFT CR"},
+      {"date": "2024-02-10", "sequence_number": 1, "amount": "90000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client 1", "narration": "NEFT CR"},
+      {"date": "2024-03-05", "sequence_number": 1, "amount": "95000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client 1", "narration": "NEFT CR"}
+    ],
+    "expected_metrics": {
+      "average_monthly_balance": "212039.47"
+    }
+  },
+  {
+    "fixture_id": "FIX-06-ZERO-INFLOW-MONTH",
+    "description": "3 Months with zero operating sales receipts in Month 2 (Feb)",
+    "opening_balance": "50000.00",
+    "od_limit": "0.00",
+    "statement_start_date": "2024-01-01",
+    "statement_end_date": "2024-03-31",
+    "existing_monthly_emi": "10000.00",
+    "proposed_monthly_emi": "5000.00",
+    "transactions": [
+      {"date": "2024-01-10", "sequence_number": 1, "amount": "100000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client A", "narration": "INV-1"},
+      {"date": "2024-03-15", "sequence_number": 1, "amount": "80000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client A", "narration": "INV-2"}
+    ],
+    "expected_metrics": {
+      "avg_monthly_operating_inflow": "60000.00",
+      "cash_flow_volatility_cv": "0.7201"
+    }
+  }
+]

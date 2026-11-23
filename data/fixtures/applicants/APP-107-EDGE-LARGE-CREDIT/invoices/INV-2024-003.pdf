@@ -43,7 +43,7 @@ endobj
 endobj
 8 0 obj
 <<
-/Length 1966
+/Length 1971
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -51,7 +51,7 @@ BT /F2 14 Tf 16.8 TL ET
 BT 1 0 0 1 40 750 Tm (TAX INVOICE) Tj T* ET
 BT /F1 8 Tf 9.6 TL ET
 BT 1 0 0 1 40 735 Tm (Invoice No: INV-2024-003) Tj T* ET
-BT 1 0 0 1 40 722 Tm (Invoice Date: 2024-01-14) Tj T* ET
+BT 1 0 0 1 40 722 Tm (Invoice Date: 2024-01-11) Tj T* ET
 n 40 640 250 75 re S
 BT /F2 8 Tf 9.6 TL ET
 BT 1 0 0 1 45 702 Tm (SUPPLIER / SELLER:) Tj T* ET
@@ -63,7 +63,7 @@ n 310 640 250 75 re S
 BT /F2 8 Tf 9.6 TL ET
 BT 1 0 0 1 315 702 Tm (BILL TO / BUYER:) Tj T* ET
 BT /F1 8 Tf 9.6 TL ET
-BT 1 0 0 1 315 688 Tm (Larsen Heavy Fab) Tj T* ET
+BT 1 0 0 1 315 688 Tm (Mahindra Supplier Hub) Tj T* ET
 BT 1 0 0 1 315 674 Tm (GSTIN: 27AABCU1002F1Z5) Tj T* ET
 BT 1 0 0 1 315 660 Tm (Place of Supply: Inter-State / Intra-State) Tj T* ET
 n 40 625 m 560 625 l S
@@ -116,5 +116,5 @@ trailer
 /Size 9
 >>
 startxref
-2919
+2924
 %%EOF

@@ -1,7 +1,7 @@
 # Deterministic Financial Metrics Specification
 
 *Classification: Technical Specification & Financial Math Standard*  
-*Document Version: 1.1.0*  
+*Document Version: 1.2.0*  
 *Implementation Invariant: All financial numbers are calculated deterministically using decimal arithmetic with explicit rounding. Floating point arithmetic is strictly forbidden.*
 
 ---
@@ -69,13 +69,19 @@
 
 ---
 
-### 2.5 Bounced Cheque / Inward Return Metrics
+### 2.5 Inward vs. Outward Returns & Bounce Rate
+To avoid ambiguity, return instruments are tracked in two distinct, direction-specific metrics:
+
 1. **Inward Clearing Returns (`inward_clearing_returns_count`)**:
-   - Represents cheques, NACH, or ECS debits **issued by the applicant** to vendors, lenders, or third parties that were **dishonoured due to insufficient funds**.
+   - **Direction & Meaning:** Represents cheques, NACH mandates, or ECS debits **issued by the applicant** to vendors, lenders, or creditors that were **dishonoured / returned unpaid due to insufficient funds** in the applicant's account.
+   - **Credit Signal:** Reflects direct liquidity failure, severe cash-flow distress, and default risk by the applicant.
 2. **Outward Cheque Returns (`outward_cheque_returns_count`)**:
-   - Represents cheques **received from customers** and deposited by the applicant that were returned unpaid by the drawer's bank.
-3. **Inward Bounce Rate (`bounce_rate`)**:
-   $$\text{Bounce Rate} = \frac{\text{inward\_clearing\_returns\_count}}{\text{total inward cheque + ECS + NACH debit attempts}}$$
+   - **Direction & Meaning:** Represents cheques **received from customers** and deposited by the applicant into their account that were **returned unpaid by the drawer's bank** (e.g. due to drawer funds or signature mismatch).
+   - **Credit Signal:** Reflects buyer/debtor credit risk, not applicant insolvency.
+3. **Bounce Rate (`bounce_rate`) Formula**:
+   - The bounce rate measures the applicant's own clearing failure rate:
+     $$\text{bounce\_rate} = \frac{\text{inward\_clearing\_returns\_count}}{\text{total inward cheque + ECS + NACH debit attempts}}$$
+   - If total inward debit attempts $= 0$, $\text{bounce\_rate} = \mathbf{0.0000}$.
 
 ---
 
@@ -87,13 +93,20 @@ $$\text{DSCR Proxy} = \frac{\text{Average Monthly Operating Inflow} - \text{Aver
 
 ### 2.7 Fixed Obligation to Income Ratio (FOIR)
 $$\text{FOIR} = \frac{\text{Average Existing Monthly EMIs} + \text{Proposed Monthly Loan EMI}}{\text{Average Monthly Operating Inflow}}$$
+- **Mathematical Identity Relation**:
+  Notice the exact structural relationship between DSCR and FOIR:
+  $$\text{DSCR} \times \text{FOIR} = \frac{\text{Monthly Surplus}}{\text{Total Debt Service}} \times \frac{\text{Total Debt Service}}{\text{Operating Inflow}} = \frac{\text{Monthly Surplus}}{\text{Operating Inflow}}$$
+  This identity holds across all evaluations within minor rounding tolerance.
 
 ---
 
-### 2.8 Counterparty Concentration
-1. **Top-1 Concentration Share**: Inflows from largest single customer / Total 12-Month Inflows.
-2. **Top-3 Concentration Share**: Inflows from top 3 customers combined / Total 12-Month Inflows.
+### 2.8 Counterparty Concentration & Round-Trip Ratio
+1. **Top-1 Concentration Share**: Inflows from largest single customer / Total 12-Month Operating Inflows.
+2. **Top-3 Concentration Share**: Inflows from top 3 customers combined / Total 12-Month Operating Inflows.
 3. **Herfindahl-Hirschman Index (HHI)**: $\sum_{i=1}^K (s_i \times 100)^2$.
+4. **Round-Trip Disqualification Ratio (`round_trip_ratio`)**:
+   $$\text{Round-Trip Ratio} = \frac{\text{Excluded Round-Trip Inflows}}{\text{Gross Total Credits}}$$
+   If `round_trip_ratio > 0.0200` (2.0%), triggers policy referral under clause `FIN-07`.
 
 ---
 
@@ -102,63 +115,44 @@ $$\text{GST Turnover Ratio} = \frac{\text{Annual GSTR-3B Taxable Supplies}}{\tex
 
 ---
 
-## 3. Six Hand-Worked Reference Fixtures
+### 2.10 Decision Precedence & Policy Authority
+The underwriting decision is governed strictly by the following hierarchy:
+1. **`DECLINE`**: Triggered if any mandatory decline condition is met (`ELIG-01` vintage < 6m, `FIN-01` DSCR < 1.0x, or `FIN-03` inward returns > 3).
+2. **`REFER`**: Triggered if no decline conditions exist, but one or more referral thresholds are tripped (`ELIG-01` 6–23m vintage, `ELIG-02` turnover < 25L, `FIN-01` 1.10–1.24x DSCR, `FIN-02` AMB < 10% EMI, `FIN-03` 1–2 inward returns, `FIN-04` FOIR > 0.50, `FIN-05` Top-1 > 40%, `FIN-06` CV > 0.60, `FIN-07` Round-Trip > 2%, or `DOC-02` GST Discrepancy > 20%).
+3. **`APPROVE`**: Only applications with zero decline and zero referral triggers, DSCR >= 1.50x, and clean banking history.
+4. **Audit Rule**: All triggered clauses are recorded in `policy_clauses_triggered` regardless of the final decision.
+
+---
+
+## 3. Six Hand-Worked Canonical Reference Fixtures
 
 ### Fixture 1: `FIX-01-CLEAN-GROWTH` (3 Months, Healthy)
 - **Period**: 2024-01-01 to 2024-03-31 (91 active days). Opening: `100000.00`.
 - Inflows: Jan `50000.00`, Feb `60000.00`, Mar `70000.00`. Outflows: Jan `30000.00`, Feb `25000.00`, Mar `35000.00`.
 - Existing EMI: `10000.00`, Proposed EMI: `5000.00`. GSTR-3B: `180000.00`.
-- **Results**:
-  - AMB: `157912.09`
-  - Mean Operating Inflow: `60000.00`, Mean Operating Outflow: `30000.00`
-  - Volatility CV: `0.1361`
-  - Bounce Rate: `0.0000` (Inward = 0, Outward = 0)
-  - DSCR Proxy: `2.0000`, FOIR: `0.2500`
-  - Top-1 Share: `0.6667`, Top-3: `1.0000`, HHI: `5555.78`
-  - GST Ratio: `1.0000`
-
----
+- **Results**: AMB = `157912.09`, Mean Inflow = `60000.00`, Mean Outflow = `30000.00`, CV = `0.1361`, Bounces = 0, DSCR = `2.0000`, FOIR = `0.2500`, Top-1 = `0.6667`, HHI = `5555.56`, GST Ratio = `1.0000`.
 
 ### Fixture 2: `FIX-02-STRESSED-BOUNCES` (3 Months, High Returns)
-- Inflows: `25000.00` avg. Outflows (excl. EMIs/returns): `11666.67` avg.
-- Inward returns: `2`, Outward returns: `0`, Attempts: `4`, Bounce Rate: `0.5000`.
-- Debt Service: `35000.00`. Surplus: `13333.33`.
+- Inflows: `25000.00` avg. Outflows: `11666.67` avg.
+- Inward returns = 2, Outward returns = 0, Attempts = 4, Bounce Rate = `0.5000`.
+- Debt Service = `35000.00`. Surplus = `13333.33`.
 - **Results**: DSCR = `0.3810`, FOIR = `1.4000`.
-
----
 
 ### Fixture 3: `FIX-03-ROUND-TRIP-EXCLUSION` (3 Months, Inflow Filtering)
 - Round-trip matching pair (`200000.00` Cr, `198000.00` Dr within 2 days) excluded as `ROUND_TRIP`.
 - Term loan disbursal (`500000.00`) excluded as `LOAN_DISBURSAL`.
 - Valid Operating Inflow: `110000.00` avg.
 
----
-
 ### Fixture 4: `FIX-04-NEGATIVE-SURPLUS` (3 Months, Deficit Cash Flow)
 - Mean Inflow: `40000.00`, Mean Outflow: `60000.00`. Debt Service: `20000.00`.
 - Surplus: `-20000.00`.
 - **Results**: DSCR = `-1.0000`, `is_negative_surplus`: `true`, FOIR = `0.5000`.
 
----
-
 ### Fixture 5: `FIX-05-PARTIAL-MONTH-START` (Mid-Month Start)
 - Active days: Jan 16-31 (16 days), Feb (29 days), Mar (31 days) = 76 days.
 - **Results**: Weighted AMB = `212039.47`.
 
----
-
 ### Fixture 6: `FIX-06-ZERO-INFLOW-MONTH` (3 Months, Zero-Inflow Month)
-- **Period**: 2024-01-01 to 2024-03-31 (91 active days).
-- Inflows:
-  - Jan: `100000.00` (SALES_RECEIPT)
-  - Feb: `0.00` (Zero sales receipts, month strictly preserved in evaluation)
-  - Mar: `80000.00` (SALES_RECEIPT)
-- Total Inflows: `180000.00`. Total Months $M = 3$.
-- Mean Inflow $\mu$: $180000.00 / 3 = \mathbf{60000.00}$.
-- **Population Variance ($\text{ddof} = 0$)**:
-  - Jan deviation: $(100000 - 60000)^2 = 1,600,000,000$
-  - Feb deviation: $(0 - 60000)^2 = 3,600,000,000$
-  - Mar deviation: $(80000 - 60000)^2 = 400,000,000$
-  - Variance $\sigma^2$: $\frac{1600000000 + 3600000000 + 400000000}{3} = \frac{5600000000}{3} = 1,866,666,666.6667$
-  - $\sigma = \sqrt{1866666666.6667} = 43204.9379$
-  - $\text{CV} = \frac{43204.9379}{60000.00} = \mathbf{0.7201}$.
+- Inflows: Jan `100000.00`, Feb `0.00`, Mar `80000.00`. Mean Inflow $\mu = 60000.00$.
+- Population Variance = $1,866,666,666.67$, $\sigma = 43204.94$.
+- **Results**: CV = $\mathbf{0.7201}$.

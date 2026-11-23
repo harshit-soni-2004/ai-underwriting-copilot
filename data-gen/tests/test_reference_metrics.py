@@ -1,206 +1,133 @@
+import json
 from decimal import Decimal
 from datetime import date
+from pathlib import Path
 import pytest
 from reference_metrics import ReferenceMetricsOracle
 
-def test_fixture_01_clean_growth():
-    transactions = [
-        {"date": "2024-01-10", "amount": "50000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Alpha Corp", "narration": "NEFT CR"},
-        {"date": "2024-01-20", "amount": "30000.00", "type": "DEBIT", "category": "VENDOR_PAYMENT", "counterparty": "Vendor X", "narration": "NEFT DR"},
-        {"date": "2024-02-05", "amount": "60000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Beta Ltd", "narration": "RTGS CR"},
-        {"date": "2024-02-15", "amount": "25000.00", "type": "DEBIT", "category": "VENDOR_PAYMENT", "counterparty": "Vendor Y", "narration": "NEFT DR"},
-        {"date": "2024-03-10", "amount": "70000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Alpha Corp", "narration": "NEFT CR"},
-        {"date": "2024-03-20", "amount": "35000.00", "type": "DEBIT", "category": "OPERATING_EXPENSE", "counterparty": "Utilities", "narration": "BILLPAY"}
-    ]
-    res = ReferenceMetricsOracle.calculate_all(
-        transactions=transactions,
-        opening_balance=Decimal("100000.00"),
-        statement_start_date=date(2024, 1, 1),
-        statement_end_date=date(2024, 3, 31),
-        existing_monthly_emi=Decimal("10000.00"),
-        proposed_monthly_emi=Decimal("5000.00"),
-        gstr3b_annual_taxable_supplies=Decimal("180000.00")
-    )
-    assert res["average_monthly_balance"] == "157912.09"
-    assert res["avg_monthly_operating_inflow"] == "60000.00"
-    assert res["avg_monthly_operating_outflow"] == "30000.00"
-    assert res["cash_flow_volatility_cv"] == "0.1361"
-    assert res["inward_clearing_returns_count"] == 0
-    assert res["bounce_rate"] == "0.0000"
-    assert res["dscr_proxy"] == "2.0000"
-    assert res["foir"] == "0.2500"
-    assert res["counterparty_top1_share"] == "0.6667"
-    assert res["counterparty_top3_share"] == "1.0000"
-    assert res["gst_turnover_ratio"] == "1.0000"
+def test_canonical_hand_worked_fixtures_from_json():
+    fixtures_file = Path(__file__).resolve().parent.parent.parent / "data" / "fixtures" / "canonical_hand_worked_fixtures.json"
+    with open(fixtures_file, "r", encoding="utf-8") as f:
+        fixtures = json.load(f)
 
-    dec, trig = ReferenceMetricsOracle.evaluate_policy(res, {"vintage_months": 36, "proposed_monthly_emi": "5000.00"})
-    assert "FIN-05" in trig  # Top 1 concentration > 40%
-    assert dec == "REFER"
+    for fix in fixtures:
+        f_id = fix["fixture_id"]
+        open_bal = Decimal(fix["opening_balance"])
+        start_d = date.fromisoformat(fix["statement_start_date"])
+        end_d = date.fromisoformat(fix["statement_end_date"])
+        ex_emi = Decimal(fix["existing_monthly_emi"])
+        pr_emi = Decimal(fix["proposed_monthly_emi"])
+        gst_ann = Decimal(fix["gstr3b_annual_taxable_supplies"]) if "gstr3b_annual_taxable_supplies" in fix else None
 
-def test_fixture_02_stressed_bounces():
-    transactions = [
-        {"date": "2024-04-10", "amount": "30000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Buyer A", "narration": "NEFT CR"},
-        {"date": "2024-04-15", "amount": "40000.00", "type": "DEBIT", "category": "DEBT_SERVICE", "counterparty": "Bank", "narration": "EMI DEBIT"},
-        {"date": "2024-05-02", "amount": "20000.00", "type": "DEBIT", "category": "INWARD_CHEQUE_RETURN", "counterparty": "Third Party", "narration": "CHQ RET INSUFFICIENT FUNDS"},
-        {"date": "2024-05-10", "amount": "25000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Buyer A", "narration": "NEFT CR"},
-        {"date": "2024-05-20", "amount": "35000.00", "type": "DEBIT", "category": "VENDOR_PAYMENT", "counterparty": "Vendor Z", "narration": "CHQ DEBIT VENDOR"},
-        {"date": "2024-06-05", "amount": "20000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Buyer A", "narration": "NEFT CR"},
-        {"date": "2024-06-15", "amount": "22000.00", "type": "DEBIT", "category": "INWARD_NACH_RETURN", "counterparty": "Fintech", "narration": "NACH RET - BALANCE INSUFFICIENT"}
-    ]
-    res = ReferenceMetricsOracle.calculate_all(
-        transactions=transactions,
-        opening_balance=Decimal("25000.00"),
-        statement_start_date=date(2024, 4, 1),
-        statement_end_date=date(2024, 6, 30),
-        existing_monthly_emi=Decimal("25000.00"),
-        proposed_monthly_emi=Decimal("10000.00")
-    )
-    assert res["avg_monthly_operating_inflow"] == "25000.00"
-    assert res["avg_monthly_operating_outflow"] == "11666.67"
-    assert res["inward_clearing_returns_count"] == 2
-    assert res["outward_cheque_returns_count"] == 0
-    assert res["total_inward_clearing_attempts"] == 4
-    assert res["bounce_rate"] == "0.5000"
-    assert res["dscr_proxy"] == "0.3810"
-    assert res["foir"] == "1.4000"
+        res = ReferenceMetricsOracle.calculate_all(
+            transactions=fix["transactions"],
+            opening_balance=open_bal,
+            statement_start_date=start_d,
+            statement_end_date=end_d,
+            existing_monthly_emi=ex_emi,
+            proposed_monthly_emi=pr_emi,
+            gstr3b_annual_taxable_supplies=gst_ann
+        )
 
-    dec, trig = ReferenceMetricsOracle.evaluate_policy(res, {"vintage_months": 40, "proposed_monthly_emi": "10000.00"})
-    assert dec == "DECLINE"
-    assert "FIN-01" in trig
+        for key, exp_val in fix["expected_metrics"].items():
+            if key == "excluded_inflows_breakdown":
+                assert res["excluded_inflows_breakdown"] == exp_val, f"Mismatch in {f_id} excluded inflows"
+            else:
+                assert res[key] == exp_val, f"Mismatch in {f_id} for key {key}: expected {exp_val}, got {res[key]}"
 
-def test_fixture_03_round_trip_exclusion():
-    transactions = [
-        {"date": "2024-01-05", "amount": "100000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client Regular", "narration": "NEFT CR"},
-        {"date": "2024-01-15", "amount": "200000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Entity Circle", "narration": "RTGS CR"},
-        {"date": "2024-01-17", "amount": "198000.00", "type": "DEBIT", "category": "VENDOR_PAYMENT", "counterparty": "Entity Circle", "narration": "RTGS DR"},
-        {"date": "2024-02-10", "amount": "500000.00", "type": "CREDIT", "category": "LOAN_DISBURSAL", "counterparty": "NBFC Lender", "narration": "LOAN DISBURSAL"},
-        {"date": "2024-02-20", "amount": "120000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client Regular", "narration": "NEFT CR"},
-        {"date": "2024-03-10", "amount": "110000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client Regular", "narration": "NEFT CR"}
-    ]
-    res = ReferenceMetricsOracle.calculate_all(
-        transactions=transactions,
-        opening_balance=Decimal("50000.00"),
-        statement_start_date=date(2024, 1, 1),
-        statement_end_date=date(2024, 3, 31),
-        existing_monthly_emi=Decimal("15000.00"),
-        proposed_monthly_emi=Decimal("10000.00")
-    )
-    assert res["avg_monthly_operating_inflow"] == "110000.00"
-    assert res["excluded_inflows_breakdown"]["ROUND_TRIP"] == "200000.00"
-    assert res["excluded_inflows_breakdown"]["LOAN_DISBURSAL"] == "500000.00"
+@pytest.mark.parametrize("clause,metric_key,test_value,applicant_extra,expected_decision,should_trigger", [
+    # ELIG-01 (Vintage in months: <6 decline, 6-23 refer, >=24 pass)
+    ("ELIG-01", "vintage_months", 5, {}, "DECLINE", True),
+    ("ELIG-01", "vintage_months", 6, {}, "REFER", True),
+    ("ELIG-01", "vintage_months", 23, {}, "REFER", True),
+    ("ELIG-01", "vintage_months", 24, {}, "APPROVE", False),
+    ("ELIG-01", "vintage_months", 25, {}, "APPROVE", False),
 
-def test_fixture_04_negative_surplus():
-    transactions = [
-        {"date": "2024-01-15", "amount": "40000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client A", "narration": "NEFT CR"},
-        {"date": "2024-01-20", "amount": "60000.00", "type": "DEBIT", "category": "VENDOR_PAYMENT", "counterparty": "Vendor A", "narration": "RTGS DR"},
-        {"date": "2024-02-15", "amount": "35000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client A", "narration": "NEFT CR"},
-        {"date": "2024-02-20", "amount": "55000.00", "type": "DEBIT", "category": "VENDOR_PAYMENT", "counterparty": "Vendor A", "narration": "RTGS DR"},
-        {"date": "2024-03-15", "amount": "45000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client A", "narration": "NEFT CR"},
-        {"date": "2024-03-20", "amount": "65000.00", "type": "DEBIT", "category": "VENDOR_PAYMENT", "counterparty": "Vendor A", "narration": "RTGS DR"}
-    ]
-    res = ReferenceMetricsOracle.calculate_all(
-        transactions=transactions,
-        opening_balance=Decimal("100000.00"),
-        statement_start_date=date(2024, 1, 1),
-        statement_end_date=date(2024, 3, 31),
-        existing_monthly_emi=Decimal("15000.00"),
-        proposed_monthly_emi=Decimal("5000.00")
-    )
-    assert res["avg_monthly_operating_inflow"] == "40000.00"
-    assert res["avg_monthly_operating_outflow"] == "60000.00"
-    assert res["is_negative_surplus"] is True
-    assert res["dscr_proxy"] == "-1.0000"
-    assert res["foir"] == "0.5000"
+    # ELIG-02 (Turnover annual: <25L refer, >=25L pass)
+    ("ELIG-02", "avg_monthly_operating_inflow", "200000.00", {}, "REFER", True),     # 24.0 Lakh
+    ("ELIG-02", "avg_monthly_operating_inflow", "208333.34", {}, "APPROVE", False),   # 25.0 Lakh (>=25L pass)
+    ("ELIG-02", "avg_monthly_operating_inflow", "220000.00", {}, "APPROVE", False),   # 26.4 Lakh
 
-def test_fixture_05_partial_month_start():
-    transactions = [
-        {"date": "2024-01-20", "amount": "40000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client 1", "narration": "NEFT CR"},
-        {"date": "2024-02-10", "amount": "90000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client 1", "narration": "NEFT CR"},
-        {"date": "2024-03-05", "amount": "95000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client 1", "narration": "NEFT CR"}
-    ]
-    res = ReferenceMetricsOracle.calculate_all(
-        transactions=transactions,
-        opening_balance=Decimal("80000.00"),
-        statement_start_date=date(2024, 1, 16),
-        statement_end_date=date(2024, 3, 31),
-        existing_monthly_emi=Decimal("10000.00"),
-        proposed_monthly_emi=Decimal("5000.00")
-    )
-    assert res["average_monthly_balance"] == "212039.47"
+    # FIN-01 (DSCR: <1.0 decline, 1.0-1.24 refer, >=1.25 pass)
+    ("FIN-01", "dscr_proxy", "0.9900", {}, "DECLINE", True),
+    ("FIN-01", "dscr_proxy", "1.0000", {}, "REFER", True),
+    ("FIN-01", "dscr_proxy", "1.2400", {}, "REFER", True),
+    ("FIN-01", "dscr_proxy", "1.2500", {}, "APPROVE", False),
+    ("FIN-01", "dscr_proxy", "1.5500", {}, "APPROVE", False),
 
-def test_fixture_06_zero_inflow_month():
-    transactions = [
-        {"date": "2024-01-10", "amount": "100000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client A", "narration": "INV-1"},
-        {"date": "2024-03-15", "amount": "80000.00", "type": "CREDIT", "category": "SALES_RECEIPT", "counterparty": "Client A", "narration": "INV-2"}
-    ]
-    res = ReferenceMetricsOracle.calculate_all(
-        transactions=transactions,
-        opening_balance=Decimal("50000.00"),
-        statement_start_date=date(2024, 1, 1),
-        statement_end_date=date(2024, 3, 31),
-        existing_monthly_emi=Decimal("10000.00"),
-        proposed_monthly_emi=Decimal("5000.00")
-    )
-    # Total inflow 180,000 / 3 months = 60,000.00
-    assert res["avg_monthly_operating_inflow"] == "60000.00"
-    # Month 2 has 0 inflow. Population CV = 0.7201
-    assert res["cash_flow_volatility_cv"] == "0.7201"
+    # FIN-02 (AMB vs Proposed EMI >= 10%: <10% refer, >=10% pass)
+    ("FIN-02", "average_monthly_balance", "4900.00", {"proposed_monthly_emi": "50000.00"}, "REFER", True),
+    ("FIN-02", "average_monthly_balance", "5000.00", {"proposed_monthly_emi": "50000.00"}, "APPROVE", False),
+    ("FIN-02", "average_monthly_balance", "5500.00", {"proposed_monthly_emi": "50000.00"}, "APPROVE", False),
 
-def test_policy_clauses_individual():
-    # Base clean metric payload
+    # FIN-03 (Inward Returns: 0 pass, 1-3 refer, >3 decline)
+    ("FIN-03", "inward_clearing_returns_count", 0, {}, "APPROVE", False),
+    ("FIN-03", "inward_clearing_returns_count", 1, {}, "REFER", True),
+    ("FIN-03", "inward_clearing_returns_count", 2, {}, "REFER", True),
+    ("FIN-03", "inward_clearing_returns_count", 3, {}, "REFER", True),
+    ("FIN-03", "inward_clearing_returns_count", 4, {}, "DECLINE", True),
+
+    # FIN-04 (FOIR: <= 0.50 pass, > 0.50 refer)
+    ("FIN-04", "foir", "0.4900", {}, "APPROVE", False),
+    ("FIN-04", "foir", "0.5000", {}, "APPROVE", False),
+    ("FIN-04", "foir", "0.5100", {}, "REFER", True),
+
+    # FIN-05 (Top-1 Share: <= 0.40 pass, > 0.40 refer)
+    ("FIN-05", "counterparty_top1_share", "0.3900", {}, "APPROVE", False),
+    ("FIN-05", "counterparty_top1_share", "0.4000", {}, "APPROVE", False),
+    ("FIN-05", "counterparty_top1_share", "0.4100", {}, "REFER", True),
+
+    # FIN-06 (Volatility CV: <= 0.60 pass, > 0.60 refer)
+    ("FIN-06", "cash_flow_volatility_cv", "0.5900", {}, "APPROVE", False),
+    ("FIN-06", "cash_flow_volatility_cv", "0.6000", {}, "APPROVE", False),
+    ("FIN-06", "cash_flow_volatility_cv", "0.6100", {}, "REFER", True),
+
+    # FIN-07 (Round-Trip Ratio: <= 0.0200 pass, > 0.0200 refer)
+    ("FIN-07", "round_trip_ratio", "0.0190", {}, "APPROVE", False),
+    ("FIN-07", "round_trip_ratio", "0.0200", {}, "APPROVE", False),
+    ("FIN-07", "round_trip_ratio", "0.0210", {}, "REFER", True),
+
+    # DOC-02 (GST Discrepancy: |ratio - 1.0| <= 0.20 pass, > 0.20 refer)
+    ("DOC-02", "gst_turnover_ratio", "1.1900", {}, "APPROVE", False),
+    ("DOC-02", "gst_turnover_ratio", "1.2000", {}, "APPROVE", False),
+    ("DOC-02", "gst_turnover_ratio", "1.2100", {}, "REFER", True),
+    ("DOC-02", "gst_turnover_ratio", "0.8100", {}, "APPROVE", False),
+    ("DOC-02", "gst_turnover_ratio", "0.7900", {}, "REFER", True),
+])
+def test_policy_clauses_parametrized(clause, metric_key, test_value, applicant_extra, expected_decision, should_trigger):
+    # Base clean metric setup (would normally APPROVE)
     base_metrics = {
         "average_monthly_balance": "500000.00",
         "avg_monthly_operating_inflow": "400000.00",
+        "avg_monthly_operating_outflow": "200000.00",
         "dscr_proxy": "1.6000",
         "inward_clearing_returns_count": 0,
         "foir": "0.2000",
         "counterparty_top1_share": "0.2500",
         "cash_flow_volatility_cv": "0.2000",
+        "round_trip_ratio": "0.0000",
         "gst_turnover_ratio": "1.0000"
     }
 
-    # ELIG-01 test (<6m decline, 6-23m refer)
-    dec, trig = ReferenceMetricsOracle.evaluate_policy(base_metrics, {"vintage_months": 5, "proposed_monthly_emi": "20000.00"})
-    assert dec == "DECLINE" and "ELIG-01" in trig
+    base_profile = {
+        "vintage_months": 36,
+        "proposed_monthly_emi": "20000.00"
+    }
 
-    dec, trig = ReferenceMetricsOracle.evaluate_policy(base_metrics, {"vintage_months": 12, "proposed_monthly_emi": "20000.00"})
-    assert dec == "REFER" and "ELIG-01" in trig
+    # Inject test value into either metrics or profile
+    if metric_key in base_metrics:
+        base_metrics[metric_key] = test_value
+    elif metric_key in base_profile:
+        base_profile[metric_key] = test_value
 
-    # FIN-01 test (<1.0 decline, 1.0-1.24 refer)
-    m = dict(base_metrics, dscr_proxy="0.8500")
-    dec, trig = ReferenceMetricsOracle.evaluate_policy(m, {"vintage_months": 36, "proposed_monthly_emi": "20000.00"})
-    assert dec == "DECLINE" and "FIN-01" in trig
+    base_profile.update(applicant_extra)
 
-    m = dict(base_metrics, dscr_proxy="1.1500")
-    dec, trig = ReferenceMetricsOracle.evaluate_policy(m, {"vintage_months": 36, "proposed_monthly_emi": "20000.00"})
-    assert dec == "REFER" and "FIN-01" in trig
+    dec, triggered = ReferenceMetricsOracle.evaluate_policy(base_metrics, base_profile)
 
-    # FIN-02 test (AMB < 10% EMI)
-    m = dict(base_metrics, average_monthly_balance="1000.00")
-    dec, trig = ReferenceMetricsOracle.evaluate_policy(m, {"vintage_months": 36, "proposed_monthly_emi": "50000.00"})
-    assert dec == "REFER" and "FIN-02" in trig
-
-    # FIN-03 test (>3 decline, >2 refer)
-    m = dict(base_metrics, inward_clearing_returns_count=4)
-    dec, trig = ReferenceMetricsOracle.evaluate_policy(m, {"vintage_months": 36, "proposed_monthly_emi": "20000.00"})
-    assert dec == "DECLINE" and "FIN-03" in trig
-
-    # FIN-04 test (FOIR > 0.50)
-    m = dict(base_metrics, foir="0.5500")
-    dec, trig = ReferenceMetricsOracle.evaluate_policy(m, {"vintage_months": 36, "proposed_monthly_emi": "20000.00"})
-    assert dec == "REFER" and "FIN-04" in trig
-
-    # FIN-05 test (Top-1 > 0.40)
-    m = dict(base_metrics, counterparty_top1_share="0.4800")
-    dec, trig = ReferenceMetricsOracle.evaluate_policy(m, {"vintage_months": 36, "proposed_monthly_emi": "20000.00"})
-    assert dec == "REFER" and "FIN-05" in trig
-
-    # FIN-06 test (CV > 0.60)
-    m = dict(base_metrics, cash_flow_volatility_cv="0.7500")
-    dec, trig = ReferenceMetricsOracle.evaluate_policy(m, {"vintage_months": 36, "proposed_monthly_emi": "20000.00"})
-    assert dec == "REFER" and "FIN-06" in trig
-
-    # DOC-02 test (Discrepancy > 20%)
-    m = dict(base_metrics, gst_turnover_ratio="0.7200")
-    dec, trig = ReferenceMetricsOracle.evaluate_policy(m, {"vintage_months": 36, "proposed_monthly_emi": "20000.00"})
-    assert dec == "REFER" and "DOC-02" in trig
+    if should_trigger:
+        assert clause in triggered, f"Clause {clause} should have triggered for {metric_key}={test_value}"
+        assert dec == expected_decision, f"Expected {expected_decision}, got {dec} for {metric_key}={test_value}"
+    else:
+        assert clause not in triggered, f"Clause {clause} should NOT have triggered for {metric_key}={test_value}"
+        if not triggered:
+            assert dec == "APPROVE"

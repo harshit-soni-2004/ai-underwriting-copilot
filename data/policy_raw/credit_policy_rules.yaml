@@ -39,6 +39,9 @@ financial_thresholds:
   FIN-06:
     description: "Cash Flow Volatility (CV of operating inflow)"
     max_cv: "0.6000"
+  FIN-07:
+    description: "Round-Trip Ratio (round trip credits / gross credits)"
+    max_round_trip_ratio: "0.0200"
 
 verification:
   DOC-01:
@@ -49,3 +52,4 @@ verification:
 authority:
   AUTH-01:
     auto_approve_min_dscr: "1.5000"
+    precedence: ["DECLINE", "REFER", "APPROVE"]
